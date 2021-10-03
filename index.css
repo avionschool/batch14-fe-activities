@@ -352,6 +352,58 @@ header ul li a:hover{
                             margin-left: 8%;
                         }
                     }
+                    @media (max-width: 414px)
+                    {
+                        #homeSec{
+                            margin-top: 30%;
+                        }
+                        .con_home{
+                            display: block;
+                        }
+                        .con_home .home_txt{
+                            margin-left: 50px;
+                            font-size: 1.5rem;
+                        }
+                        .con_home .home_txt h2{
+                            font-size: 1.5rem;
+                            margin-bottom: 10px;
+                        }
+                        .con_home .home_txt h1{
+                            margin-bottom: 10px;
+                        }
+                        .con_home .home_txt span{
+                            font-size: 1.5rem;
+                        }
+                        .con_home .home_txt button{
+                            margin-top: 30px;
+                            font-size: 0.8rem;
+                        }
+                        .home_scl .scl{
+                            display: block;
+                            margin-top: 30%;
+                        }
+                        .home_scl .scl hr{
+                            display: none;
+                        }
+                        .home_scl .scl li i{
+                            font-size: 1.6rem;
+                            margin: 1rem -1rem;
+                        }
+                        .home_img img{
+                            width: 225px;
+                            height: 350px;
+                            opacity: 0.4;
+                            margin-top: 10%;
+                            right: 5%;
+                        }
+                        #homeSec #line{
+                            display: flex;
+                            width: 60%;
+                            filter: blur(2px);
+                            margin-top: 20px;
+                            margin-left: 20%;
+                        }
+                    }
                     @media (max-width: 411px)
                     {
                         #homeSec{
@@ -456,6 +508,45 @@ header ul li a:hover{
                             margin-left: 20%;
                         }
 
+                    }
+                    @media (max-width: 375px)
+                    {
+                        #homeSec{
+                            margin-top: 30%;
+                        }
+                        .con_home .home_txt{
+                            margin-left: 30px;
+                            font-size: 1.5rem;
+                        }
+                        .con_home .home_txt h2{
+                            font-size: 1.1rem;
+                            margin-bottom: 10px;
+                        }
+                        .con_home .home_txt h1{
+                            margin-bottom: 10px;
+                        }
+                        .con_home .home_txt span{
+                            font-size: 1.1rem;
+                        }
+                        .con_home .home_txt button{
+                            margin-top: 30px;
+                            font-size: 0.7rem;
+                        }
+                        .home_scl .scl{
+                            display: block;
+                            margin-top: 20%;
+                        }
+                        .home_scl .scl li i{
+                            font-size: 1rem;
+                            margin: 1rem -1rem;
+                        }
+                        .home_img img{
+                            width: 200px;
+                            height: 230px;
+                            opacity: 0.4;
+                            margin-top: 12.5%;
+                            right: 5%;
+                        }
                     }
 
 .hdforProj.active{
@@ -609,6 +700,31 @@ article{
                             font-size: 1.5em;
                         }
                     }
+                    @media (max-width: 414px) 
+                    {
+                        .spaceProj{
+                            background: #000;
+                            margin-top: 10%;
+                        }
+                        .headingProj h2{
+                            font-size: 1.5rem;
+                        }
+                        .headingProj h1{
+                            font-size: 2rem;
+                        }
+                        article{
+                            display: block;
+                        }
+                        .port .card{
+                            height: 200px;
+                        }
+                        .port .card:hover .contentBx .content h3{
+                            font-size: 1.3em;
+                        }
+                        .port .card:hover .contentBx .content p{
+                            font-size: 0.8em;
+                        }
+                    }
                     @media (max-width: 411px) 
                     {
                         .spaceProj{
@@ -656,5 +772,17 @@ article{
                         }
                         .port .card:hover .contentBx .content p{
                             font-size: 1em;
+                        }
+                    }
+                    @media (max-width: 320px) 
+                    {
+                        .headingProj h2{
+                            font-size: 1.3rem;
+                        }
+                        .headingProj h1{
+                            font-size: 1.8rem;
+                        }
+                        .port .card{
+                            height: 150px;
                         }
                     }
