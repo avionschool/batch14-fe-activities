@@ -12,21 +12,107 @@
 </head>
 <body>
 <!-- Top -->
-    <header>
+    <header class="hdforProj"> <!--Di pa Tapos-->
         <a href="#" class="logo">Isaac</a>
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar"> <!--Navbar-->
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">About</a></li>
-            </ul>
-        </nav>
+        <div class="toggle"></div>
+        <!--Navbar-->
+        <ul class="ul_nav">
+            <li><a href="#home" style="--i:1;">Home</a></li>
+            <li><a href="#project" style="--i:2;" onclick=changeHD();>Projects</a></li>
+            <li><a href="#skills" style="--i:3;">Skills</a></li>
+            <li><a href="#about"style="--i:4;">About</a></li>
+        </ul>
     </header>
 <!--End of Top-->
 
-<!--Main-->
+<!--Home-->
+    <section id="homeSec">
+
+        <div class="con_home" id="home">
+
+            <div class="home_txt">
+                <h2>Hi! I am<br/><h1>Isaac Sarte</h1></h2>
+                <span>Web Developer</span><br/>
+                <button>Contact Me</button>
+            </div>
+
+            <div class="home_img">
+                <img src="isaac.png" alt="Isaac Sarte">
+            </div>
+
+        </div>
+
+        <hr id="line"/>
+
+        <div class="home_scl"> <!--Social Media Links-->
+            <ul class="scl">
+                <hr/>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-github"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                <hr/>
+            </ul>
+        </div>
+
+    </section>
+<!-- End of Home -->
+
+<!-- Projects -->
+    <div class="spaceProj" id="project"></div> <!--White Space-->
+
+    <section id="projects">
+
+        <div class="headingProj">
+            <h2>My Avion Projects</h2>
+            <h1>Portfolio</h1>
+        </div>
+
+        <article> <!--Pictures for the Portfolio-->
+            <div class="port">
+                <div class = "card">
+                    <div class = "imgBx">
+                        <img src = "t_w1.PNG">
+                    </div>
+                    <div class = "contentBx">
+                        <div class = "content">
+                            <h3>Tribute Page</h3>
+                            <p>JYP Tribute Page <br>Week 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card">
+                    <div class = "imgBx">
+                        <img src = "s_w1.PNG">
+                    </div>
+                    <div class = "contentBx">
+                        <div class = "content">
+                            <h3>Survey Form</h3>
+                            <p>Sample Forms <br>Week 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </section>
+<!-- End of Projects -->
+
+
+<!--JavaScript-->
+                    <script>
+                        const menuToggle = document.querySelector('.toggle');
+                        const navigation = document.querySelector('.ul_nav');
+                        menuToggle.onclick = function(){
+                            menuToggle.classList.toggle('active');
+                            navigation.classList.toggle('active');
+                        }
+
+                        const changeHD = document.querySelector('.hdforProj');
+                        changeHD.onclick = function(){
+                            changeHD.classList.toggle('active');
+                        }
+
+                    </script>
 
 </body>
 </html>
