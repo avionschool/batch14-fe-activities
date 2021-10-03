@@ -260,6 +260,98 @@ header ul li a:hover{
 #homeSec #line{
     display: none;
 }
+                    @media (max-width: 1024px)
+                    {
+                        #homeSec{
+                            margin-top: 20%;
+                        }
+                        .con_home{
+                            display: block;
+                        }
+                        .con_home .home_txt{
+                            margin-left: 50px;
+                            font-size: 4rem;
+                        }
+                        .con_home .home_txt h2{
+                            font-size: 3rem;
+                            margin-bottom: 10px;
+                        }
+                        .con_home .home_txt h1{
+                            margin-bottom: 10px;
+                        }
+                        .con_home .home_txt span{
+                            font-size: 3rem;
+                        }
+                        .con_home .home_txt button{
+                            margin-top: 30px;
+                            font-size: 1.8rem;
+                        }
+                        .home_scl .scl{
+                            display: block;
+                            margin-top: 30%;
+                        }
+                        .home_scl .scl hr{
+                            display: none;
+                        }
+                        .home_scl .scl li i{
+                            font-size: 3rem;
+                            margin: 1rem -1rem;
+                        }
+                        .home_img img{
+                            width: 400px;
+                            height: 600px;
+                            opacity: 0.4;
+                            margin-top: 10%;
+                            right: 15%;
+                        }
+                        #homeSec #line{
+                            display: flex;
+                            width: 80%;
+                            filter: blur(2px);
+                            margin-top: 50px;
+                            margin-left: 8%;
+                        }
+                    }
+                    @media (max-width: 768px)
+                    {
+                        .con_home .home_txt{
+                            margin-left: 50px;
+                            font-size: 3rem;
+                        }
+                        .con_home .home_txt h2{
+                            font-size: 2rem;
+                            margin-bottom: 10px;
+                        }
+                        .con_home .home_txt span{
+                            font-size: 2rem;
+                        }
+                        .con_home .home_txt button{
+                            margin-top: 30px;
+                            font-size: 1.5rem;
+                        }
+                        .home_scl .scl{
+                            display: block;
+                            margin-top: 20%;
+                        }
+                        .home_scl .scl li i{
+                            font-size: 2.5rem;
+                            margin: 1rem -1rem;
+                        }
+                        .home_img img{
+                            width: 400px;
+                            height: 470px;
+                            opacity: 0.4;
+                            margin-top: 10%;
+                            right: 15%;
+                        }
+                        #homeSec #line{
+                            display: flex;
+                            width: 80%;
+                            filter: blur(2px);
+                            margin-top: 40px;
+                            margin-left: 8%;
+                        }
+                    }
                     @media (max-width: 411px)
                     {
                         #homeSec{
@@ -311,7 +403,6 @@ header ul li a:hover{
                             margin-top: 20px;
                             margin-left: 20%;
                         }
-
                     }
                     @media (max-width: 375px)
                     {
@@ -492,6 +583,32 @@ article{
     color: #fff;
 }
 
+                    @media (max-width: 1024px) 
+                    {
+                        .spaceProj{
+                            background: #000;
+                            margin-top: 10%;
+                        }
+                        .headingProj h2{
+                            font-size: 2.5rem;
+                        }
+                        .headingProj h1{
+                            font-size: 3.5rem;
+                        }
+                        article{
+                            display: block;
+                        }
+                        .port .card{
+                            width: 600px;
+                            height: 350px;
+                        }
+                        .port .card:hover .contentBx .content h3{
+                            font-size: 2em;
+                        }
+                        .port .card:hover .contentBx .content p{
+                            font-size: 1.5em;
+                        }
+                    }
                     @media (max-width: 411px) 
                     {
                         .spaceProj{
