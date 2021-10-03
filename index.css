@@ -125,7 +125,7 @@ header ul li a:hover{
                             right: 20px;
                             width: 40px;
                             height: 40px;
-                            background: #fff url('https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.15752-9/cp0/203063352_774505063248173_5540452122997363900_n.png?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeE2PeE_jfTlXUNklqlSzxitQF9BW7FI3AhAX0FbsUjcCEPRkeCmC899RNH6K-hcZWSaqmHEGAj2G8iX8ZzzLWA4&_nc_ohc=UlQTjXVbndwAX-Iuzzo&_nc_ht=scontent.fmnl9-2.fna&oh=5f84644eb7dc17c1f5e7cfcfd81a2a18&oe=617D7D3D');
+                            background: #fff url('menu.png');
                             background-size: 30px;
                             background-repeat: no-repeat;
                             background-position: center;
@@ -134,7 +134,7 @@ header ul li a:hover{
                             border-radius: 2px;
                         }
                         .toggle.active{
-                            background: #000 url('https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.15752-9/cp0/244421642_1301032186998042_8183843040578087436_n.png?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFVG6qA_sNopji0yrqtCZX3NJ5xCVWYTfY0nnEJVZhN9uk9FHmMRwB_PhyW8V9E58uqIK6-8l4JAgs55fAQNGGu&_nc_ohc=21MlIRfbvXQAX9EdruO&_nc_oc=AQnS__uO-kqMRK-5oOKOw1-Uee78bh0GWJ90n3xIsbhgviCLqXVQ7K8YQjZYM4y5jT3Qs-hSdjcQAPnAhaNEG0CT&tn=cTQzGiMq2IgPPJYX&_nc_ht=scontent.fmnl9-1.fna&oh=0b62ba61c026af9b977c367604c91503&oe=61807036');
+                            background: #000 url('close.png');
                             background-size: 25px;
                             background-repeat: no-repeat;
                             background-position: center;
@@ -260,7 +260,59 @@ header ul li a:hover{
 #homeSec #line{
     display: none;
 }
+                    @media (max-width: 411px)
+                    {
+                        #homeSec{
+                            margin-top: 30%;
+                        }
+                        .con_home{
+                            display: block;
+                        }
+                        .con_home .home_txt{
+                            margin-left: 50px;
+                            font-size: 1.5rem;
+                        }
+                        .con_home .home_txt h2{
+                            font-size: 1.5rem;
+                            margin-bottom: 10px;
+                        }
+                        .con_home .home_txt h1{
+                            margin-bottom: 10px;
+                        }
+                        .con_home .home_txt span{
+                            font-size: 1.5rem;
+                        }
+                        .con_home .home_txt button{
+                            margin-top: 30px;
+                            font-size: 0.8rem;
+                        }
+                        .home_scl .scl{
+                            display: block;
+                            margin-top: 30%;
+                        }
+                        .home_scl .scl hr{
+                            display: none;
+                        }
+                        .home_scl .scl li i{
+                            font-size: 1.6rem;
+                            margin: 1rem -1rem;
+                        }
+                        .home_img img{
+                            width: 225px;
+                            height: 350px;
+                            opacity: 0.4;
+                            margin-top: 10%;
+                            right: 5%;
+                        }
+                        #homeSec #line{
+                            display: flex;
+                            width: 60%;
+                            filter: blur(2px);
+                            margin-top: 20px;
+                            margin-left: 20%;
+                        }
 
+                    }
                     @media (max-width: 375px)
                     {
                         #homeSec{
@@ -440,6 +492,31 @@ article{
     color: #fff;
 }
 
+                    @media (max-width: 411px) 
+                    {
+                        .spaceProj{
+                            background: #000;
+                            margin-top: 10%;
+                        }
+                        .headingProj h2{
+                            font-size: 1.5rem;
+                        }
+                        .headingProj h1{
+                            font-size: 2rem;
+                        }
+                        article{
+                            display: block;
+                        }
+                        .port .card{
+                            height: 200px;
+                        }
+                        .port .card:hover .contentBx .content h3{
+                            font-size: 1.3em;
+                        }
+                        .port .card:hover .contentBx .content p{
+                            font-size: 0.8em;
+                        }
+                    }
                     @media (max-width: 375px) 
                     {
                         .spaceProj{
