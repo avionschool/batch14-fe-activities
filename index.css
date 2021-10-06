@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat",sans-serif;
 }
-body{
-    background: #000;
-}
-html{
+
+html {
     scroll-behavior: smooth;
 }
-header{
+
+body {
+    background: #000;
+}
+
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,9 +26,9 @@ header{
     width: 100%;
     z-index: 1000;
     background: #000;
-    border-bottom: 1px solid #bfbfbf;
+    border-bottom: 1px outset #bfbfbf;
 }
-header .logo{
+header .logo {
     position: relative;
     color: #fff;
     display: inline-block;
@@ -37,7 +40,7 @@ header .logo{
     animation-delay: 0.2s;
 }
 
-    @keyframes slide_left{
+    @keyframes slide_left {
         0%{
             transform: translateX(-100px);
             opacity: 0;
@@ -48,14 +51,14 @@ header .logo{
         }
     }
 
-header ul{
+header ul {
     position: relative;
     display: flex;
 }
-header ul li{
+header ul li {
     list-style: none;
 }
-header ul li a{
+header ul li a {
     display: inline-block;
     color: #fff;
     font-weight: 600;
@@ -70,7 +73,7 @@ header ul li a{
     animation-delay: calc(0.2s * var(--i));
 }
 
-    @keyframes slide_top{
+    @keyframes slide_top {
         0%{
             transform: translateY(100px);
             opacity: 0;
@@ -82,7 +85,7 @@ header ul li a{
     }
 
 header ul li a.active,
-header ul li a:hover{
+header ul li a:hover {
     background: #313131;
     color: #fff;
     border-radius: 10px;
@@ -125,17 +128,17 @@ header ul li a:hover{
                             right: 20px;
                             width: 40px;
                             height: 40px;
-                            background: #fff url('https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.15752-9/cp0/203063352_774505063248173_5540452122997363900_n.png?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeE2PeE_jfTlXUNklqlSzxitQF9BW7FI3AhAX0FbsUjcCEPRkeCmC899RNH6K-hcZWSaqmHEGAj2G8iX8ZzzLWA4&_nc_ohc=UlQTjXVbndwAX-Iuzzo&_nc_ht=scontent.fmnl9-2.fna&oh=5f84644eb7dc17c1f5e7cfcfd81a2a18&oe=617D7D3D');
-                            background-size: 30px;
+                            background: url('menu.png');
+                            background-size: 50px;
                             background-repeat: no-repeat;
                             background-position: center;
                             cursor: pointer;
                             z-index: 1000;
-                            border-radius: 2px;
+                            opacity: 5;
                         }
                         .toggle.active{
-                            background: #000 url('https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.15752-9/cp0/244421642_1301032186998042_8183843040578087436_n.png?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFVG6qA_sNopji0yrqtCZX3NJ5xCVWYTfY0nnEJVZhN9uk9FHmMRwB_PhyW8V9E58uqIK6-8l4JAgs55fAQNGGu&_nc_ohc=21MlIRfbvXQAX9EdruO&_nc_oc=AQnS__uO-kqMRK-5oOKOw1-Uee78bh0GWJ90n3xIsbhgviCLqXVQ7K8YQjZYM4y5jT3Qs-hSdjcQAPnAhaNEG0CT&tn=cTQzGiMq2IgPPJYX&_nc_ht=scontent.fmnl9-1.fna&oh=0b62ba61c026af9b977c367604c91503&oe=61807036');
-                            background-size: 25px;
+                            background: url('close.png');
+                            background-size: 50px;
                             background-repeat: no-repeat;
                             background-position: center;
                             cursor: pointer;
@@ -144,23 +147,131 @@ header ul li a:hover{
                         }
                     }
 
-#homeSec{
+/* Home */
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('homeBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-position-y: 44px;
+    overflow: hidden;
+}
+
+.container {
     position: relative;
-    margin-top: 15%;
-    background: #000;
+    width: 80%;
+    height: 500px;
+}
+
+.contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+                    @media screen and (max-width: 900px) {
+                        .wrapper {
+                            background-position-y: 160px;
+                        }
+                        .contents {
+                            display: block;
+                        }
+                    }
+
+/* Left Side */
+
+.contents .left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    text-align: left;
     color: #fff;
 }
-.con_home{
+
+.contents .left .Isaac {
     display: flex;
-    justify-content: space-between;
 }
-.con_home .home_txt{
-    font-size: 5rem;
-    margin-left: 200px;
+
+.contents .left .Isaac h1{
+    transition: 0.2s;
 }
-.con_home .home_txt h2{
-    font-size: 3rem;
+
+.contents .left .Isaac .I:hover {
+    color: #3d2d2d;
+    font-size: 7.5rem;
+    text-transform: uppercase;
+}
+
+.contents .left .Isaac .S:hover {
+    color: #504848;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.contents .left .Isaac .A1:hover {
+    color: #2c1818;
+    font-size: 7.5rem;
+    text-transform: uppercase;
+}
+
+.contents .left .Isaac .A2:hover {
+    color: #856363;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+}
+
+.contents .left .Isaac .C:hover {
+    color: #21152e;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.contents .left .Isaac .S2 {
+    margin-left: 30px;
+}
+
+.contents .left .Isaac .S2:hover {
+    color: #856363;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+}
+
+.contents .left .Isaac .A3:hover {
+    color: #9175be;
+    font-size: 7.5rem;
+    text-transform: uppercase;
+}
+
+.contents .left .Isaac .R:hover {
+    color: #391aec;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+}
+
+.contents .left .Isaac .T:hover {
+    color: #e00b0b;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+}
+
+.contents .left .Isaac .E:hover {
+    color: #3d2d2d;
+    font-size: 7.5rem;
+    text-transform: uppercase;
+}
+
+.contents .left h2 {
+    font-size: 4rem;
     font-weight: lighter;
+    margin-bottom: 20px;
     opacity: 0;
     animation: slide_right 0.5s linear forwards;
     animation-delay: 1.5s; 
@@ -175,7 +286,11 @@ header ul li a:hover{
             opacity: 1;
         }
     }
-.con_home .home_txt h1{
+
+.contents .left h1 {
+    font-size: 7rem;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
     opacity: 0;
     animation: slide_left 0.5s linear forwards;
     animation-delay: 1.5s;
@@ -190,8 +305,9 @@ header ul li a:hover{
             opacity: 1;
         }
     }
-.con_home .home_txt span{
-    font-size: 3rem;
+
+.contents .left span {
+    font-size: 4rem;
     font-weight: bold;
     opacity: 0;
     animation: slide_right2 0.5s linear forwards;
@@ -207,8 +323,10 @@ header ul li a:hover{
             opacity: 1;
         }
     }
-.con_home .home_txt button{
+
+.contents .left button {
     cursor: pointer;
+    margin-top: 50px;
     padding: 15px 32px;
     font-size: 1.2rem;
     font-weight: 550;
@@ -216,35 +334,266 @@ header ul li a:hover{
     color: #fff;
     border: none;
 }
-.con_home .home_txt button:hover{
+
+.contents .left button:hover {
     background: #3d2d2d;
 }
-.home_scl .scl{
+
+.contents .left .line {
+    display: none;
+}
+
+.contents .left hr {
+    /* transform: rotate(90deg); */
+    opacity: 0.5;
+    filter: blur(2px);
+}
+
+.home_scl .scl {
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-top: 5%;
-    margin-left: 10%;
+    margin-top: 15%;
 }
-.home_scl .scl li i{
+
+.home_scl .scl li i {
     color: #fff;
     font-size: 1.5rem;
     margin: 3rem 1.4rem;
 }
+
 .home_scl .scl li i:hover{
     color: #bfbfbf;
     transform: translateY(-5px);
 }
-.home_scl .scl hr{
-    opacity: 0.5;
-    filter: blur(2px);
+
+                    @media screen and (max-width: 1630px) {
+                        .contents .left h1 {
+                            font-size: 5rem;
+                        }
+                        .contents .left span {
+                            font-size: 3rem;
+                        }
+                    }
+                    @media screen and (max-width: 940px) {
+                        .contents .left h2 {
+                            font-size: 3rem;
+                        }
+                        .contents .left h1 {
+                            font-size: 4.5rem;
+                        }
+                        .contents .left span {
+                            font-size: 2.5rem;
+                        }
+                    }
+                    @media screen and (max-width: 900px) {
+                        .contents .left {
+                            margin-top: -75px;
+                        }
+                        .contents .left h2 {
+                            font-size: 2.8rem;
+                        }
+                        .contents .left h1 {
+                            font-size: 4rem;
+                        }
+                        .contents .left span {
+                            font-size: 2.3rem;
+                        }
+                        .contents .left .line {
+                            display: flex;
+                            margin-top: 75px;
+                        }
+                        .contents .left hr {
+                            display: none;
+                        }
+                        .home_scl .scl {
+                            display: block;
+                            flex-direction: column;
+                            margin-top: 20%;
+                        }
+                        
+                        .home_scl .scl li i {
+                            font-size: 2.5rem;
+                            margin: 1.4rem 1.4rem;
+                        }
+                    }
+                    @media screen and (max-width: 414px) {
+                        .contents .left {
+                            margin-top: -30px;
+                        }
+                        .contents .left h2 {
+                            font-size: 2rem;
+                            margin-bottom: 10px;
+                        }
+                        .contents .left h1 {
+                            font-size: 3rem;
+                            margin-bottom: 10px;
+                        }
+                        .contents .left span {
+                            font-size: 2rem;
+                        }
+                        .contents .left .line {
+                            display: flex;
+                            margin-top: 30px;
+                            width: 150%;
+                            margin-left: 25%;
+                        }
+                        .contents .left button {
+                            margin-top: 40px;
+                            padding: 15px 32px;
+                            font-size: 0.7rem;
+                        }
+                        .home_scl .scl {
+                            margin-top: 50%;
+                        }
+                        .home_scl .scl li i {
+                            font-size: 1.5rem;
+                            margin: 1.4rem 1.4rem;
+                        }
+                        .contents .left .Isaac .S2 {
+                            margin-left: 15px;
+                        }
+                        .contents .left .Isaac .I:hover {
+                            font-size: 2.5rem;
+                        }
+                        .contents .left .Isaac .S:hover {
+                            font-size: 1.5rem;
+                        }
+                        .contents .left .Isaac .A1:hover {
+                            font-size: 3.5rem;
+                        }
+                        .contents .left .Isaac .A2:hover {
+                            font-size: 2.5rem;
+                        }
+                        .contents .left .Isaac .C:hover {
+                            font-size: 1.5rem;
+                        }
+                        .contents .left .Isaac .S2:hover {
+                            font-size: 2.5rem;
+                        }
+                        .contents .left .Isaac .A3:hover {
+                            font-size: 3.5rem;
+                        }
+                        .contents .left .Isaac .R:hover {
+                            font-size: 2.5rem;
+                        }
+                        .contents .left .Isaac .T:hover {
+                            font-size: 2.5rem;
+                        }
+                        .contents .left .Isaac .E:hover {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    @media screen and (max-width: 375px) {
+                        .contents .left {
+                            margin-top: -5px;
+                        }
+                        .contents .left h2 {
+                            font-size: 2rem;
+                            margin-bottom: 10px;
+                        }
+                        .contents .left h1 {
+                            font-size: 2.8rem;
+                            margin-bottom: 10px;
+                        }
+                        .contents .left span {
+                            font-size: 1.8rem;
+                        }
+                        .contents .left .line {
+                            display: flex;
+                            margin-top: 20px;
+                            width: 150%;
+                            margin-left: 25%;
+                        }
+                        .contents .left button {
+                            margin-top: 30px;
+                            padding: 15px 32px;
+                            font-size: 0.7rem;
+                        }
+                        .home_scl .scl {
+                            margin-top: 50%;
+                        }
+                        .home_scl .scl li i {
+                            font-size: 1.5rem;
+                            margin: 1.4rem 1.4rem;
+                        }
+                        .contents .left .Isaac .S2 {
+                            margin-left: 15px;
+                        }
+                    }
+                    @media screen and (max-width: 360px) {
+                        .contents .left {
+                            margin-top: 20px;
+                        }
+                        .contents .left h2 {
+                            font-size: 1.9rem;
+                            margin-bottom: 10px;
+                        }
+                        .contents .left h1 {
+                            font-size: 2.1rem;
+                            margin-bottom: 10px;
+                        }
+                        .contents .left span {
+                            font-size: 1.6rem;
+                        }
+                        .contents .left .line {
+                            display: flex;
+                            margin-top: 20px;
+                            width: 150%;
+                            margin-left: 25%;
+                        }
+                        .contents .left button {
+                            margin-top: 20px;
+                            padding: 15px 30px;
+                            font-size: 0.7rem;
+                        }
+                        .home_scl .scl li i {
+                            font-size: 1.5rem;
+                            margin: 1.2rem 1.2rem;
+                        }
+                    }
+                    @media screen and (max-width: 320px) {
+                        .contents .left {
+                            margin-top: 55px;
+                        }
+                        .contents .left h2 {
+                            font-size: 1.8rem;
+                            margin-bottom: 10px;
+                        }
+                        .contents .left h1 {
+                            font-size: 2rem;
+                            margin-bottom: 10px;
+                        }
+                        .contents .left span {
+                            font-size: 1.5rem;
+                        }
+                        .contents .left button {
+                            margin-top: 20px;
+                            padding: 15px 30px;
+                            font-size: 0.5rem;
+                        }
+                        .home_scl .scl {
+                            margin-top: 20%;
+                        }
+                        .home_scl .scl li i {
+                            font-size: 1.2rem;
+                            margin: 1.2rem 1.2rem;
+                        }
+                    }
+
+/* Right Side */
+
+.contents .right {
+    width: 50%;
 }
-.home_img img{
-    position: absolute;
-    width: 550px;
-    height: 790px;
-    margin-top: -7%;
-    right: 11%;
+
+.contents .right img {
+    position: relative;
+    top: -22.5%;
+    width: 70%;
+    height: 140%;
+    right: -30%;
+    filter: drop-shadow(8px 8px 5px rgb(43, 42, 42));
     opacity: 0;
     animation: fade_in 1s linear forwards;
     animation-delay: 1.5s;
@@ -254,346 +603,96 @@ header ul li a:hover{
             opacity: 0;
         }
         100%{
-            opacity: 0.4;
+            opacity: 0.6;
         }
     }
-#homeSec #line{
-    display: none;
-}
-                    @media (max-width: 1024px)
-                    {
-                        #homeSec{
-                            margin-top: 20%;
-                        }
-                        .con_home{
-                            display: block;
-                        }
-                        .con_home .home_txt{
-                            margin-left: 50px;
-                            font-size: 4rem;
-                        }
-                        .con_home .home_txt h2{
-                            font-size: 3rem;
-                            margin-bottom: 10px;
-                        }
-                        .con_home .home_txt h1{
-                            margin-bottom: 10px;
-                        }
-                        .con_home .home_txt span{
-                            font-size: 3rem;
-                        }
-                        .con_home .home_txt button{
-                            margin-top: 30px;
-                            font-size: 1.8rem;
-                        }
-                        .home_scl .scl{
-                            display: block;
-                            margin-top: 30%;
-                        }
-                        .home_scl .scl hr{
-                            display: none;
-                        }
-                        .home_scl .scl li i{
-                            font-size: 3rem;
-                            margin: 1rem -1rem;
-                        }
-                        .home_img img{
-                            width: 400px;
-                            height: 600px;
-                            opacity: 0.4;
-                            margin-top: 10%;
-                            right: 15%;
-                        }
-                        #homeSec #line{
-                            display: flex;
-                            width: 80%;
-                            filter: blur(2px);
-                            margin-top: 50px;
-                            margin-left: 8%;
-                        }
-                    }
-                    @media (max-width: 768px)
-                    {
-                        .con_home .home_txt{
-                            margin-left: 50px;
-                            font-size: 3rem;
-                        }
-                        .con_home .home_txt h2{
-                            font-size: 2rem;
-                            margin-bottom: 10px;
-                        }
-                        .con_home .home_txt span{
-                            font-size: 2rem;
-                        }
-                        .con_home .home_txt button{
-                            margin-top: 30px;
-                            font-size: 1.5rem;
-                        }
-                        .home_scl .scl{
-                            display: block;
-                            margin-top: 20%;
-                        }
-                        .home_scl .scl li i{
-                            font-size: 2.5rem;
-                            margin: 1rem -1rem;
-                        }
-                        .home_img img{
-                            width: 400px;
-                            height: 470px;
-                            opacity: 0.4;
-                            margin-top: 10%;
-                            right: 15%;
-                        }
-                        #homeSec #line{
-                            display: flex;
-                            width: 80%;
-                            filter: blur(2px);
-                            margin-top: 40px;
-                            margin-left: 8%;
-                        }
-                    }
-                    @media (max-width: 414px)
-                    {
-                        #homeSec{
-                            margin-top: 30%;
-                        }
-                        .con_home{
-                            display: block;
-                        }
-                        .con_home .home_txt{
-                            margin-left: 50px;
-                            font-size: 1.5rem;
-                        }
-                        .con_home .home_txt h2{
-                            font-size: 1.5rem;
-                            margin-bottom: 10px;
-                        }
-                        .con_home .home_txt h1{
-                            margin-bottom: 10px;
-                        }
-                        .con_home .home_txt span{
-                            font-size: 1.5rem;
-                        }
-                        .con_home .home_txt button{
-                            margin-top: 30px;
-                            font-size: 0.8rem;
-                        }
-                        .home_scl .scl{
-                            display: block;
-                            margin-top: 30%;
-                        }
-                        .home_scl .scl hr{
-                            display: none;
-                        }
-                        .home_scl .scl li i{
-                            font-size: 1.6rem;
-                            margin: 1rem -1rem;
-                        }
-                        .home_img img{
-                            width: 225px;
-                            height: 350px;
-                            opacity: 0.4;
-                            margin-top: 10%;
-                            right: 5%;
-                        }
-                        #homeSec #line{
-                            display: flex;
-                            width: 60%;
-                            filter: blur(2px);
-                            margin-top: 20px;
-                            margin-left: 20%;
-                        }
-                    }
-                    @media (max-width: 411px)
-                    {
-                        #homeSec{
-                            margin-top: 30%;
-                        }
-                        .con_home{
-                            display: block;
-                        }
-                        .con_home .home_txt{
-                            margin-left: 50px;
-                            font-size: 1.5rem;
-                        }
-                        .con_home .home_txt h2{
-                            font-size: 1.5rem;
-                            margin-bottom: 10px;
-                        }
-                        .con_home .home_txt h1{
-                            margin-bottom: 10px;
-                        }
-                        .con_home .home_txt span{
-                            font-size: 1.5rem;
-                        }
-                        .con_home .home_txt button{
-                            margin-top: 30px;
-                            font-size: 0.8rem;
-                        }
-                        .home_scl .scl{
-                            display: block;
-                            margin-top: 30%;
-                        }
-                        .home_scl .scl hr{
-                            display: none;
-                        }
-                        .home_scl .scl li i{
-                            font-size: 1.6rem;
-                            margin: 1rem -1rem;
-                        }
-                        .home_img img{
-                            width: 225px;
-                            height: 350px;
-                            opacity: 0.4;
-                            margin-top: 10%;
-                            right: 5%;
-                        }
-                        #homeSec #line{
-                            display: flex;
-                            width: 60%;
-                            filter: blur(2px);
-                            margin-top: 20px;
-                            margin-left: 20%;
-                        }
-                    }
-                    @media (max-width: 375px)
-                    {
-                        #homeSec{
-                            margin-top: 40%;
-                        }
-                        .con_home{
-                            display: block;
-                        }
-                        .con_home .home_txt{
-                            margin-left: 50px;
-                            font-size: 2rem;
-                        }
-                        .con_home .home_txt h2{
-                            font-size: 2rem;
-                            margin-bottom: 10px;
-                        }
-                        .con_home .home_txt h1{
-                            margin-bottom: 10px;
-                        }
-                        .con_home .home_txt span{
-                            font-size: 2rem;
-                        }
-                        .con_home .home_txt button{
-                            margin-top: 30px;
-                            font-size: 1rem;
-                        }
-                        .home_scl .scl{
-                            display: block;
-                            margin-top: 30%;
-                        }
-                        .home_scl .scl hr{
-                            display: none;
-                        }
-                        .home_scl .scl li i{
-                            font-size: 1.6rem;
-                            margin: 1rem -1rem;
-                        }
-                        .home_img img{
-                            width: 225px;
-                            height: 350px;
-                            opacity: 0.4;
-                            margin-top: 12.5%;
-                            right: 5%;
-                        }
-                        #homeSec #line{
-                            display: flex;
-                            width: 60%;
-                            filter: blur(2px);
-                            margin-top: 25px;
-                            margin-left: 20%;
-                        }
 
+.contents .right img:hover {
+    filter: drop-shadow(8px 8px 5px rgb(73, 72, 72));
+}
+
+                    @media screen and (max-width: 1630px) {
+                        .contents .right img {
+                            top: -15%;
+                            width: 70%;
+                            height: 125%;
+                            right: -30%;
+                        } 
                     }
-                    @media (max-width: 375px)
-                    {
-                        #homeSec{
-                            margin-top: 30%;
+                    @media screen and (max-width: 900px) {
+                        .contents .right img {
+                            position: relative;
+                            top: -250px;
+                            width: 95%;
+                            left: 110%;
                         }
-                        .con_home .home_txt{
-                            margin-left: 30px;
-                            font-size: 1.5rem;
+                    }
+                    @media screen and (max-width: 768px) {
+                        .contents .right img {
+                            left: 105%;
                         }
-                        .con_home .home_txt h2{
-                            font-size: 1.1rem;
-                            margin-bottom: 10px;
+                    }
+                    @media screen and (max-width: 414px) {
+                        .contents .right img {
+                            top: -160px;
+                            width: 120%;
+                            height: 290px;
+                            left: 80%;
                         }
-                        .con_home .home_txt h1{
-                            margin-bottom: 10px;
+                    }
+                    @media screen and (max-width: 375px) {
+                        .contents .right img {
+                            top: -200px;
+                            width: 120%;
+                            height: 280px;
+                            left: 80%;
                         }
-                        .con_home .home_txt span{
-                            font-size: 1.1rem;
+                    }
+                    @media screen and (max-width: 360px) {
+                        .contents .right img {
+                            top: -235px;
+                            width: 120%;
+                            height: 250px;
+                            left: 80%;
                         }
-                        .con_home .home_txt button{
-                            margin-top: 30px;
-                            font-size: 0.7rem;
-                        }
-                        .home_scl .scl{
-                            display: block;
-                            margin-top: 20%;
-                        }
-                        .home_scl .scl li i{
-                            font-size: 1rem;
-                            margin: 1rem -1rem;
-                        }
-                        .home_img img{
-                            width: 200px;
-                            height: 230px;
-                            opacity: 0.4;
-                            margin-top: 12.5%;
-                            right: 5%;
+                    }
+                    @media screen and (max-width: 320px) {
+                        .contents .right img {
+                            top: -250px;
+                            width: 120%;
+                            height: 210px;
+                            left: 80%;
                         }
                     }
 
-.hdforProj.active{
+/* Projects */
+article {
     background: #fff;
-}
-.hdforProj.active .logo,
-.hdforProj.active ul li a{
-    color: #3d2d2d;
-}
-.hdforProj.active ul li a:hover{
-    color: #fff;
-}
-.spaceProj{
-    background: #fff;
-    height: 100px;
-    margin-top: 15%;
-}
-#projects{
-    margin-top: 0%;
-    background: #fff;
-}
-.headingProj{
-    text-align: center;
-}
-.headingProj h2{
-    font-size: 2rem;
-    margin-bottom: 2%;
-}
-.headingProj h1{
-    font-size: 3rem;
-    font-weight: bolder;
-}
-article{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
 }
-.port{
+
+.projects {
+    background: #fff;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.projContents {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     max-width: 1100px;
+    margin-top: 5%;
 }
-.port .card{
+
+.projContents .card {
     position: relative;
     width: 520px;
     height: 300px;
@@ -601,15 +700,16 @@ article{
     border-radius: 20px;
     overflow: hidden;
 }
-.port .card .imgBx,
-.port .card .contentBx{
+
+.projContents .card .imgBx,
+.projContents .card .contentBx {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-.port .card .imgBx img{
+.projContents .card .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -617,7 +717,8 @@ article{
     height: 100%;
     object-fit: cover;
 }
-.port .card .contentBx::before{
+
+.projContents .card .contentBx::before {
     content: '';
     position: absolute;
     top: 0;
@@ -631,18 +732,21 @@ article{
     transform-origin: right;
     transition-delay: 0.5s;
 }
-.port .card:hover .contentBx::before{
+
+.projContents .card:hover .contentBx::before {
     transform: scaleX(1);
     transition: transform 0.5s ease-in-out;
     transform-origin: left;
     transition-delay: 0s;
 }
-.port .card .contentBx{
+
+.projContents .card .contentBx{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.port .card .contentBx .content{
+
+.projContents .card .contentBx .content {
     position: relative;
     padding: 30px;
     z-index: 1;
@@ -650,139 +754,116 @@ article{
     transform: translateX(-300px);
     transition-delay: 0s;
 }
-.port .card:hover .contentBx .content{
+
+.projContents .card:hover .contentBx .content {
     transform: translateX(0px);
     transition-delay: 0.5s;
 }
-.port .card .contentBx .content h3{
+
+.projContents .card .contentBx .content h3{
     font-size: 0em;
 }
-.port .card .contentBx .content p{
+
+.projContents .card .contentBx .content p{
     font-size: 0em;
 }
-.port .card:hover .contentBx .content h3{
+
+.projContents .card:hover .contentBx .content h3{
     font-size: 2em;
     text-transform: uppercase;
     color: #fff;
     font-weight: 500;
     text-align: left;
 }
-.port .card:hover .contentBx .content p{
+
+.projContents .card:hover .contentBx .content p{
     font-size: 1.5em;
     line-height: 2.4em;
     font-weight: 300;
     color: #fff;
 }
 
-                    @media (max-width: 1024px) 
-                    {
-                        .spaceProj{
-                            background: #000;
-                            margin-top: 10%;
+.projects .changeImg {
+    align-items: center;
+    text-align: center;
+}
+
+.projects .changeImg h1 {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 1rem;
+}
+
+.projects .changeImg #cursorH1 {
+    cursor: pointer;
+}
+
+                    @media screen and (max-width: 768px) {
+                        .projects h2 {
+                            font-size: 3rem;
                         }
-                        .headingProj h2{
-                            font-size: 2.5rem;
+                        .projContents .card {
+                            width: 420px;
+                            height: 200px;
                         }
-                        .headingProj h1{
-                            font-size: 3.5rem;
-                        }
-                        article{
-                            display: block;
-                        }
-                        .port .card{
-                            width: 600px;
-                            height: 350px;
-                        }
-                        .port .card:hover .contentBx .content h3{
-                            font-size: 2em;
-                        }
-                        .port .card:hover .contentBx .content p{
+                        .projContents .card:hover .contentBx .content h3{
                             font-size: 1.5em;
                         }
-                    }
-                    @media (max-width: 414px) 
-                    {
-                        .spaceProj{
-                            background: #000;
-                            margin-top: 10%;
-                        }
-                        .headingProj h2{
-                            font-size: 1.5rem;
-                        }
-                        .headingProj h1{
-                            font-size: 2rem;
-                        }
-                        article{
-                            display: block;
-                        }
-                        .port .card{
-                            height: 200px;
-                        }
-                        .port .card:hover .contentBx .content h3{
-                            font-size: 1.3em;
-                        }
-                        .port .card:hover .contentBx .content p{
-                            font-size: 0.8em;
-                        }
-                    }
-                    @media (max-width: 411px) 
-                    {
-                        .spaceProj{
-                            background: #000;
-                            margin-top: 10%;
-                        }
-                        .headingProj h2{
-                            font-size: 1.5rem;
-                        }
-                        .headingProj h1{
-                            font-size: 2rem;
-                        }
-                        article{
-                            display: block;
-                        }
-                        .port .card{
-                            height: 200px;
-                        }
-                        .port .card:hover .contentBx .content h3{
-                            font-size: 1.3em;
-                        }
-                        .port .card:hover .contentBx .content p{
-                            font-size: 0.8em;
-                        }
-                    }
-                    @media (max-width: 375px) 
-                    {
-                        .spaceProj{
-                            background: #000;
-                        }
-                        .headingProj h2{
-                            font-size: 1.5rem;
-                        }
-                        .headingProj h1{
-                            font-size: 2rem;
-                        }
-                        article{
-                            display: block;
-                        }
-                        .port .card{
-                            height: 200px;
-                        }
-                        .port .card:hover .contentBx .content h3{
-                            font-size: 1.5em;
-                        }
-                        .port .card:hover .contentBx .content p{
+                        .projContents .card:hover .contentBx .content p{
                             font-size: 1em;
                         }
-                    }
-                    @media (max-width: 320px) 
-                    {
-                        .headingProj h2{
+                        .projects .changeImg h1 {
                             font-size: 1.3rem;
                         }
-                        .headingProj h1{
-                            font-size: 1.8rem;
+                    }
+                    @media screen and (max-width: 414px) {
+                        .projects h2 {
+                            font-size: 2rem;
                         }
-                        .port .card{
+                        .projContents .card {
+                            width: 300px;
                             height: 150px;
+                        }
+                        .projContents .card:hover .contentBx .content h3{
+                            font-size: 1.5em;
+                        }
+                        .projContents .card:hover .contentBx .content p{
+                            font-size: 1em;
+                        }
+                        .projects .changeImg h1 {
+                            font-size: 1rem;
+                        }
+                    }
+                    @media screen and (max-width: 375px) {
+                        .projects h2 {
+                            font-size: 2rem;
+                        }
+                        .projContents .card {
+                            width: 300px;
+                            height: 150px;
+                        }
+                        .projContents .card:hover .contentBx .content h3{
+                            font-size: 1.5em;
+                        }
+                        .projContents .card:hover .contentBx .content p{
+                            font-size: 1em;
+                        }
+                        .projects .changeImg h1 {
+                            font-size: 1rem;
+                        }
+                    }
+                    @media screen and (max-width: 320px) {
+                        .projContents .card {
+                            width: 250px;
+                            height: 130px;
+                        }
+                        .projContents .card:hover .contentBx .content h3{
+                            font-size: 1.2em;
+                        }
+                        .projContents .card:hover .contentBx .content p{
+                            font-size: 0.8em;
+                        }
+                        .projects .changeImg h1 {
+                            font-size: 1rem;
                         }
                     }
