@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaac Sarte [Avion]</title>
+    <title>Isaac Sarte</title>
     <link rel="stylesheet" href="index.css" type="text/css" />
     <!--Font Awesome Link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -13,14 +13,14 @@
     
 </head>
 <body>
-<!-- Top -->
+<!--Top-->
     <header class="hdforProj"> <!--Di pa Tapos-->
-        <a href="#" class="logo">Isaac</a>
+        <a href="" class="logo">Isaac</a>
         <div class="toggle"></div>
         <!--Navbar-->
         <ul class="ul_nav">
             <li><a href="#home" style="--i:1;">Home</a></li>
-            <li><a href="#project" style="--i:2;" onclick=changeHD();>Projects</a></li>
+            <li><a href="#project" style="--i:2;">Projects</a></li>
             <li><a href="#skills" style="--i:3;">Skills</a></li>
             <li><a href="#about"style="--i:4;">About</a></li>
         </ul>
@@ -28,93 +28,179 @@
 <!--End of Top-->
 
 <!--Home-->
-    <section id="homeSec">
+    <div class="wrapper" id="home"> <!-- Main Wrapper after Header-->
+        <div class="container"> <!--Box Parent Class-->
+            <div class="contents">
+                <div class="left"> <!--Left Side-->
 
-        <div class="con_home" id="home">
+                    <h2>Hi! I am</h2>
+                    <div class="Isaac">
+                        <h1 class="I">I</h1>
+                        <h1 class="S">s</h1>
+                        <h1 class="A1">a</h1>
+                        <h1 class="A2">a</h1>
+                        <h1 class="C">c</h1>
 
-            <div class="home_txt">
-                <h2>Hi! I am<br/><h1>Isaac Sarte</h1></h2>
-                <span>Web Developer</span><br/>
-                <button>Contact Me</button>
-            </div>
-
-            <div class="home_img">
-                <img src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.15752-9/244437925_1100358813828642_8282954536184420389_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFzo9exiekUiA6BTs6oJhrwnY2ROhHUpI6djZE6EdSkjovsH_OuqZ2LH2JyIZgyhxaPQik34mMZc85cY7o_6Hri&_nc_ohc=DuXMZYIkOBsAX86lyd_&_nc_ht=scontent.fmnl9-2.fna&oh=2d638fc8fe72b47e404432937eea0557&oe=617FCED4" alt="Isaac Sarte">
-            </div>
-
-        </div>
-
-        <hr id="line"/>
-
-        <div class="home_scl"> <!--Social Media Links-->
-            <ul class="scl">
-                <hr/>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fab fa-github"></i></a></li>
-                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                <hr/>
-            </ul>
-        </div>
-
-    </section>
-<!-- End of Home -->
-
-<!-- Projects -->
-    <div class="spaceProj" id="project"></div> <!--White Space-->
-
-    <section id="projects">
-
-        <div class="headingProj">
-            <h2>My Avion Projects</h2>
-            <h1>Portfolio</h1>
-        </div>
-
-        <article> <!--Pictures for the Portfolio-->
-            <div class="port">
-                <div class = "card">
-                    <div class = "imgBx">
-                        <img src = "https://scontent-nrt1-1.xx.fbcdn.net/v/l/t1.15752-9/243328973_928764617986432_8472370182680167862_n.png?_nc_cat=110&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeE3b-6Tkr1oBoJQoXtVrvx6kUu5-0lJ_9-RS7n7SUn_3678JU713S4bV-OEBfMRMNV4_IB7pF3ipgIVxiPaivWh&_nc_ohc=VXquf6vIddAAX-AiDUd&_nc_ht=scontent-nrt1-1.xx&oh=f38aed158fb9c40f368b3da632dc7310&oe=617E9332">
+                        <h1 class="S2">S</h1>
+                        <h1 class="A3">a</h1>
+                        <h1 class="R">r</h1>
+                        <h1 class="T">t</h1>
+                        <h1 class="E">e</h1>
                     </div>
-                    <div class = "contentBx">
-                        <div class = "content">
-                            <h3>Tribute Page</h3>
-                            <p>JYP Tribute Page <br>Week 1</p>
-                        </div>
+                    <span>Web Developer</span><br/>
+                    <button>Download CV</button>
+
+                    <hr class="line" />
+                    <div class="home_scl"> <!--Social Media Links-->
+                        <ul class="scl">
+                            <hr/>
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-github"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            <hr/>
+                        </ul>
                     </div>
+
                 </div>
-                <div class = "card">
-                    <div class = "imgBx">
-                        <img src = "https://scontent-nrt1-1.xx.fbcdn.net/v/t1.15752-9/243130333_885854898801943_6547858242150659717_n.png?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGbKsrnJVBCSwn0dQz_NstwxXqonLQgoP_FeqictCCg_wZOaxkqkkaZ2owENFPv8MhP73TLIUu09uVujY8HmaaM&_nc_ohc=HQDetBCk6ccAX9WDHWT&_nc_ht=scontent-nrt1-1.xx&oh=e976ef075e400c17f813762dc2ff1d69&oe=617D9C9A">
-                    </div>
-                    <div class = "contentBx">
-                        <div class = "content">
-                            <h3>Survey Form</h3>
-                            <p>Sample Forms <br>Week 1</p>
-                        </div>
-                    </div>
+                <div class="right"> <!--Right Side-->
+                    <img src="bg.png" alt="">
                 </div>
             </div>
-        </article>
+        </div>
+    </div>
+<!--End of Home-->
 
-    </section>
-<!-- End of Projects -->
+<!--Projects-->
+    <section id="project"></section>
+    <div class="projects">
+        <h2>My Projects</h2>
+        <div class="changeImg">
+            <h1 class="allProjImg" id="cursorH1" data-filter="all">All</h1>
+            <h1 class="changeProjImg" id="cursorH1" data-filter=".rails">Rails App</h1>
+            <h1 class="changeProjImg" id="cursorH1" data-filter=".rjs">React Js</h1>
+            <h1 class="changeProjImg" id="cursorH1" data-filter=".njs">Next Js</h1>
+            <h1 class="changeProjImg" id="cursorH1" data-filter=".avi">Avion Projects</h1>
+        </div>
+    </div>
 
+    <article>
+        <div class="projContents"> <!--Project Images-->
+
+            <div class = "card rails">
+                <div class = "imgBx">
+                    <img src = "w1.PNG">
+                </div>
+                <div class = "contentBx">
+                    <div class = "content">
+                        <h3>Ranch PC</h3>
+                        <p>Rails App</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "card njs">
+                <div class = "imgBx">
+                    <img src = "w2.PNG">
+                </div>
+                <div class = "contentBx">
+                    <div class = "content">
+                        <h3>Wasak Beats</h3>
+                        <p>Next Js</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "card rjs">
+                <div class = "imgBx">
+                    <img src = "w3.PNG">
+                </div>
+                <div class = "contentBx">
+                    <div class = "content">
+                        <h3>Travel Advisor</h3>
+                        <p>React Js</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "card rails">
+                <div class = "imgBx">
+                    <img src = "w4.PNG">
+                </div>
+                <div class = "contentBx">
+                    <div class = "content">
+                        <h3>Sales Tax Calculator</h3>
+                        <p>Rails App</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "card rails">
+                <div class = "imgBx">
+                    <img src = "w5.PNG">
+                </div>
+                <div class = "contentBx">
+                    <div class = "content">
+                        <h3>Friend List</h3>
+                        <p>Rails App</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "card rjs">
+                <div class = "imgBx">
+                    <img src = "w6.PNG">
+                </div>
+                <div class = "contentBx">
+                    <div class = "content">
+                        <h3>Online Portfolio p2</h3>
+                        <p>React Js</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "card avi">
+                <div class = "imgBx">
+                    <img src = "wavi1.PNG">
+                </div>
+                <div class = "contentBx">
+                    <div class = "content">
+                        <h3>Tribute Page</h3>
+                        <p>HTML5 + CSS</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "card avi">
+                <div class = "imgBx">
+                    <img src = "wavi2.PNG">
+                </div>
+                <div class = "contentBx">
+                    <div class = "content">
+                        <h3>Sample Survey Form</h3>
+                        <p>HTML5 + CSS</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </article>
+<!--End of Projects-->
 
 <!--JavaScript-->
-                    <script>
-                        const menuToggle = document.querySelector('.toggle');
-                        const navigation = document.querySelector('.ul_nav');
-                        menuToggle.onclick = function(){
-                            menuToggle.classList.toggle('active');
-                            navigation.classList.toggle('active');
-                        }
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.ul_nav');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
 
-                        const changeHD = document.querySelector('.hdforProj');
-                        changeHD.onclick = function(){
-                            changeHD.classList.toggle('active');
-                        }
+    <script src="mixitup.min.js"></script>
 
-                    </script>
-
+    <script>
+        const mixer = mixitup('.projContents', {
+            selectors: {
+                target: '.card'
+            },
+            animation: {
+                duration: 500
+            }
+        });
+    </script>
+<!--End of JavaScript-->
 </body>
 </html>
