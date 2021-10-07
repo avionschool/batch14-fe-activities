@@ -13,6 +13,9 @@
     
 </head>
 <body>
+    
+    <div id="pBar"></div>
+    <div id="scrollPath"></div>
 <!--Top-->
     <header class="hdforProj"> <!--Di pa Tapos-->
         <a href="" class="logo">Isaac</a>
@@ -201,6 +204,15 @@
             }
         });
     </script>
+    <script>
+        var progress = document.getElementById('pBar');
+        var tHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function() {
+            var progressHeight = (window.pageYOffset / tHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
 <!--End of JavaScript-->
+    
 </body>
 </html>
