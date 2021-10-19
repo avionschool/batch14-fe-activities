@@ -103,6 +103,15 @@
     transition: opacity 1000ms ease-in-out;
 }
 
+                    @media screen and (min-width: 320px) and (max-width: 414px) {
+                        .slide-left {
+                            left: -10%;
+                        }
+                        .slide-right {
+                            left: 10%;
+                        }
+                    }
+
 html {
     scroll-behavior: smooth;
 }
@@ -225,7 +234,7 @@ header ul li a:hover {
                             right: 20px;
                             width: 40px;
                             height: 40px;
-                            background: url('images/menu.png');
+                            background: url(../images/menu.png);
                             background-size: 50px;
                             background-repeat: no-repeat;
                             background-position: center;
@@ -234,7 +243,7 @@ header ul li a:hover {
                             opacity: 5;
                         }
                         .toggle.active{
-                            background: url('images/close.png');
+                            background: url(../images/close.png);
                             background-size: 50px;
                             background-repeat: no-repeat;
                             background-position: center;
@@ -251,7 +260,7 @@ header ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('images/homeBG.png');
+    background-image: url(../images/homeBG.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
