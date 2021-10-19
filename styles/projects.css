@@ -1,0 +1,221 @@
+article {
+    background: var(--whiteFont);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    background: var(--whiteFont);
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 10rem;
+}
+
+.projContents {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin-top: 5%;
+}
+
+.projContents .card {
+    position: relative;
+    width: 520px;
+    height: 300px;
+    margin: 15px;
+    border-radius: 20px;
+    animation: animateCard 4s linear infinite;
+    overflow: hidden;
+}
+
+    @keyframes animateCard {
+        0% {
+            filter: drop-shadow(10px 10px 8px #8434c5);
+        }
+        50% {
+            filter: drop-shadow(10px 10px 8px #2c042c);
+        }
+        100% {
+            filter: drop-shadow(10px 10px 8px #2708af);
+        }
+    }
+
+.projContents .card .imgBx,
+.projContents .card .contentBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--mainWidth);
+    height: var(--mainHeight);
+}
+
+.projContents .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--mainWidth);
+    height: var(--mainHeight);
+    object-fit: cover;
+}
+
+.projContents .card .contentBx::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--mainWidth);
+    height: var(--mainHeight);
+    background: var(--mainBG);
+    transition: 0.5s;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+    transition-delay: 0.5s;
+}
+
+.projContents .card:hover .contentBx::before {
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+    transition-delay: 0s;
+}
+
+.projContents .card .contentBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projContents .card .contentBx .content {
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+    transition: 0.5s;
+    transform: translateX(-300px);
+    transition-delay: 0s;
+}
+
+.projContents .card:hover .contentBx .content {
+    transform: translateX(0px);
+    transition-delay: 0.5s;
+}
+
+.projContents .card .contentBx .content h3{
+    font-size: 0em;
+}
+
+.projContents .card .contentBx .content p{
+    font-size: 0em;
+}
+
+.projContents .card:hover .contentBx .content h3{
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--whiteFont);
+    font-weight: 500;
+    text-align: left;
+}
+
+.projContents .card:hover .contentBx .content p{
+    font-size: 1.5em;
+    line-height: 2.4em;
+    font-weight: 300;
+    color: var(--whiteFont);
+}
+
+.projects .changeImg {
+    align-items: center;
+    text-align: center;
+}
+
+.projects .changeImg h1 {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 1rem;
+}
+
+.projects .changeImg h1:hover {
+    color: #333;
+    transform: scale(1.05);
+}
+
+.projects .changeImg #cursorH1 {
+    cursor: pointer;
+}
+
+                    @media screen and (max-width: 768px) {
+                        .projects h2 {
+                            font-size: 3rem;
+                        }
+                        .projContents .card {
+                            width: 420px;
+                            height: 200px;
+                        }
+                        .projContents .card:hover .contentBx .content h3{
+                            font-size: 1.5em;
+                        }
+                        .projContents .card:hover .contentBx .content p{
+                            font-size: 1em;
+                        }
+                        .projects .changeImg h1 {
+                            font-size: 1.3rem;
+                        }
+                    }
+                    @media screen and (max-width: 414px) {
+                        .projects h2 {
+                            font-size: 2rem;
+                        }
+                        .projContents .card {
+                            width: 300px;
+                            height: 150px;
+                        }
+                        .projContents .card:hover .contentBx .content h3{
+                            font-size: 1.5em;
+                        }
+                        .projContents .card:hover .contentBx .content p{
+                            font-size: 1em;
+                        }
+                        .projects .changeImg h1 {
+                            font-size: 1rem;
+                        }
+                    }
+                    @media screen and (max-width: 375px) {
+                        .projects h2 {
+                            font-size: 2rem;
+                        }
+                        .projContents .card {
+                            width: 300px;
+                            height: 150px;
+                        }
+                        .projContents .card:hover .contentBx .content h3{
+                            font-size: 1.5em;
+                        }
+                        .projContents .card:hover .contentBx .content p{
+                            font-size: 1em;
+                        }
+                        .projects .changeImg h1 {
+                            font-size: 1rem;
+                        }
+                    }
+                    @media screen and (max-width: 320px) {
+                        .projContents .card {
+                            width: 250px;
+                            height: 130px;
+                        }
+                        .projContents .card:hover .contentBx .content h3{
+                            font-size: 1.2em;
+                        }
+                        .projContents .card:hover .contentBx .content p{
+                            font-size: 0.8em;
+                        }
+                        .projects .changeImg h1 {
+                            font-size: 1rem;
+                        }
+                    }

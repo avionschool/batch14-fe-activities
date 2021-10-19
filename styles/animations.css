@@ -1,0 +1,41 @@
+.fade-in {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+.slide-left {
+    opacity: 1;
+    left: -30%;
+    transition: opacity 1000ms ease-in-out;
+}
+
+.slide-left.appear {
+    opacity: 1;
+    left: 0%;
+    transition: opacity 1000ms ease-in-out;
+}
+
+.slide-right {
+    opacity: 1;
+    left: 30%;
+    transition: opacity 1000ms ease-in-out;
+}
+
+.slide-right.appear {
+    opacity: 1;
+    left: 0%;
+    transition: opacity 1000ms ease-in-out;
+}
+
+                    @media screen and (min-width: 320px) and (max-width: 414px) {
+                        .slide-left {
+                            left: -10%;
+                        }
+                        .slide-right {
+                            left: 10%;
+                        }
+                    }
