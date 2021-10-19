@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac Sarte</title>
-    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
     <!--Font Awesome Link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="shortcut icon" href="https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.15752-9/244437925_1100358813828642_8282954536184420389_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFzo9exiekUiA6BTs6oJhrwnY2ROhHUpI6djZE6EdSkjovsH_OuqZ2LH2JyIZgyhxaPQik34mMZc85cY7o_6Hri&_nc_ohc=DuXMZYIkOBsAX86lyd_&_nc_ht=scontent.fmnl9-2.fna&oh=2d638fc8fe72b47e404432937eea0557&oe=617FCED4" type="image/png" sizes="16x16" />
 
-    
 </head>
 <body>
-    
+
     <div id="pBar"></div>
     <div id="scrollPath"></div>
+
 <!--Top-->
     <header class="hdforProj"> <!--Di pa Tapos-->
         <a href="" class="logo">Isaac</a>
@@ -66,7 +66,7 @@
 
                 </div>
                 <div class="right"> <!--Right Side-->
-                    <img src="bg.png" alt="">
+                    <img src="images/background/bg.png" alt="">
                 </div>
             </div>
         </div>
@@ -76,8 +76,8 @@
 <!--Projects-->
     <section id="project"></section>
     <div class="projects">
-        <h2>My Projects</h2>
-        <div class="changeImg">
+        <h2>Sample Projects</h2>
+        <div class="changeImg fade-in">
             <h1 class="allProjImg" id="cursorH1" data-filter="all">All</h1>
             <h1 class="changeProjImg" id="cursorH1" data-filter=".rails">Rails App</h1>
             <h1 class="changeProjImg" id="cursorH1" data-filter=".rjs">React Js</h1>
@@ -89,9 +89,9 @@
     <article>
         <div class="projContents"> <!--Project Images-->
 
-            <div class = "card rails">
+            <div class = "card rails slide-left">
                 <div class = "imgBx">
-                    <img src = "w1.PNG">
+                    <img src = "images/projects/w1.PNG">
                 </div>
                 <div class = "contentBx">
                     <div class = "content">
@@ -100,9 +100,9 @@
                     </div>
                 </div>
             </div>
-            <div class = "card njs">
+            <div class = "card njs slide-right">
                 <div class = "imgBx">
-                    <img src = "w2.PNG">
+                    <img src = "images/projects/w2.PNG">
                 </div>
                 <div class = "contentBx">
                     <div class = "content">
@@ -111,9 +111,9 @@
                     </div>
                 </div>
             </div>
-            <div class = "card rjs">
+            <div class = "card rjs slide-left">
                 <div class = "imgBx">
-                    <img src = "w3.PNG">
+                    <img src = "images/projects/w3.PNG">
                 </div>
                 <div class = "contentBx">
                     <div class = "content">
@@ -122,9 +122,9 @@
                     </div>
                 </div>
             </div>
-            <div class = "card rails">
+            <div class = "card rails slide-right">
                 <div class = "imgBx">
-                    <img src = "w4.PNG">
+                    <img src = "images/projects/w4.PNG">
                 </div>
                 <div class = "contentBx">
                     <div class = "content">
@@ -133,9 +133,9 @@
                     </div>
                 </div>
             </div>
-            <div class = "card rails">
+            <div class = "card rails slide-left">
                 <div class = "imgBx">
-                    <img src = "w5.PNG">
+                    <img src = "images/projects/w5.PNG">
                 </div>
                 <div class = "contentBx">
                     <div class = "content">
@@ -144,9 +144,9 @@
                     </div>
                 </div>
             </div>
-            <div class = "card rjs">
+            <div class = "card rjs slide-right">
                 <div class = "imgBx">
-                    <img src = "w6.PNG">
+                    <img src = "images/projects/w6.PNG">
                 </div>
                 <div class = "contentBx">
                     <div class = "content">
@@ -155,9 +155,9 @@
                     </div>
                 </div>
             </div>
-            <div class = "card avi">
+            <div class = "card avi slide-left">
                 <div class = "imgBx">
-                    <img src = "wavi1.PNG">
+                    <img src = "images/projects/wavi1.PNG">
                 </div>
                 <div class = "contentBx">
                     <div class = "content">
@@ -166,9 +166,9 @@
                     </div>
                 </div>
             </div>
-            <div class = "card avi">
+            <div class = "card avi slide-right">
                 <div class = "imgBx">
-                    <img src = "wavi2.PNG">
+                    <img src = "images/projects/wavi2.PNG">
                 </div>
                 <div class = "contentBx">
                     <div class = "content">
@@ -193,6 +193,7 @@
     </script>
 
     <script src="mixitup.min.js"></script>
+    <script src="onScroll.js"></script>
 
     <script>
         const mixer = mixitup('.projContents', {
@@ -204,6 +205,7 @@
             }
         });
     </script>
+
     <script>
         var progress = document.getElementById('pBar');
         var tHeight = document.body.scrollHeight - window.innerHeight;
@@ -213,6 +215,5 @@
         }
     </script>
 <!--End of JavaScript-->
-    
 </body>
 </html>
