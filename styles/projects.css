@@ -109,6 +109,7 @@ article {
 
 .projContents .card .contentBx .content h3{
     font-size: 0em;
+    cursor: pointer;
 }
 
 .projContents .card .contentBx .content p{
@@ -121,6 +122,10 @@ article {
     color: var(--whiteFont);
     font-weight: 500;
     text-align: left;
+}
+.projContents .card .contentBx .content h3:hover {
+    transform: scale(1.05, 1.05);
+    color: #d6d6d6;
 }
 
 .projContents .card:hover .contentBx .content p{
@@ -149,6 +154,72 @@ article {
 .projects .changeImg #cursorH1 {
     cursor: pointer;
 }
+
+#conBtn {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#conBtn a {
+    text-decoration: none;
+    color: var(--mainBG);
+    position: relative;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+#conBtn a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+a svg,
+a svg rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+}
+
+a svg rect {
+    stroke-width: 2;
+    stroke: var(--mainBG);
+    stroke-dasharray: 100;
+    animation: animateSVG 2s linear infinite;
+}
+
+a svg rect:hover {
+    animation: animateBW 2s linear infinite;
+}
+
+    @keyframes animateSVG {
+        0% {
+            stroke-dashoffset: 400;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes animateBW {
+        0% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 400;
+        }
+    }
 
                     @media screen and (max-width: 768px) {
                         .projects h2 {

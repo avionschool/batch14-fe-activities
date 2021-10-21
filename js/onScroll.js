@@ -1,6 +1,9 @@
 // fade animation
 const faders = document.querySelectorAll('.fade-in');
 
+// slide up
+const slides_up = document.querySelectorAll('.slide-up');
+
 // slide-left and slide-right animaton
 const sliders_left = document.querySelectorAll('.slide-left');
 const sliders_right = document.querySelectorAll('.slide-right');
@@ -59,5 +62,8 @@ sliders_left.forEach(slider_left => {
 })
 sliders_right.forEach(slider_right => {
     slideOnScroll.observe(slider_right);
+})
+slides_up.forEach(slide_up => {
+    slideOnScroll.observe(slide_up);
 })
 

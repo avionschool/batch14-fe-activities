@@ -7,6 +7,19 @@
     opacity: 1;
 }
 
+.slide-up {
+    opacity: 0;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    transition: opacity 500ms ease-in;
+}
+
+.slide-up.appear {
+    opacity: 1;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
 .slide-left {
     opacity: 1;
     left: -30%;
