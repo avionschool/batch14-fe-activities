@@ -241,6 +241,7 @@ a svg rect:hover {
                     }
                     @media screen and (max-width: 414px) {
                         .projects h2 {
+                            padding-top: 6rem;
                             font-size: 2rem;
                         }
                         .projContents .card {

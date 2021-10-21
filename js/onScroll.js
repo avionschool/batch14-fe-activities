@@ -1,5 +1,6 @@
 // fade animation
 const faders = document.querySelectorAll('.fade-in');
+const fadeSkills = document.querySelectorAll('.boxSkills');
 
 // slide up
 const slides_up = document.querySelectorAll('.slide-up');
@@ -54,6 +55,9 @@ const slideOnScroll = new IntersectionObserver(function(
 // fade animation
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
+});
+fadeSkills.forEach(fadeSkill => {
+    appearOnScroll.observe(fadeSkill);
 });
 
 // slide animation
