@@ -1,0 +1,28 @@
+#skills {
+    padding-top: 10rem;
+    background: url(../images/projBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--whiteFont);
+    min-height: 100vh;
+}
+
+#skills .heading {
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+
+                    @media screen and (max-width: 1000px) {
+                        
+                    }
+                    @media screen and (min-width: 1150px) {
+                        
+                    }
+                    @media screen and (min-width: 320px) and (max-width: 500px) {
+                        #skills {
+                            background: var(--mainBG);
+                        }
+                    }
