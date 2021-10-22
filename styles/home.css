@@ -516,3 +516,24 @@
                             left: 80%;
                         }
                     }
+
+                    /* Laptop Sizes Queries */
+                    @media (max-width: 1240px) and (min-height: 655px) {
+                        .wrapper {
+                            margin-top: 5rem;
+                        }
+                        .contents .left h2 {
+                            font-size: 2.5rem;
+                        }
+                        .contents .left h1 {
+                            font-size: 3rem;
+                        }
+                        .contents span {
+                            font-size: 2rem;
+                        }
+                        .contants .left button {
+                            top: -10px;
+                            font-size: 1rem;
+                            padding: 10px 20px;
+                        }
+                    }
