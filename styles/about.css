@@ -13,6 +13,12 @@
     padding-bottom: 1rem;
 }
 
+                    @media screen and (min-width: 769px) and (max-width: 1024px) {
+                        #about .heading {
+                            font-size: 3rem;
+                            margin-left: -16rem;
+                        }
+                    }
                     @media screen and (min-width: 501px) and (max-width: 768px){
                         #about .heading {
                             padding-top: -4rem;

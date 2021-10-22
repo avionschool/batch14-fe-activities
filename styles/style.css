@@ -179,6 +179,11 @@ header ul li a:hover {
     background: linear-gradient(to left, violet, blue);
 }
 
+                    @media screen and (max-width: 1024px) {
+                        .lineHR {
+                            width: 75%;
+                        }
+                    }
                     @media (max-width: 991px) {
                         #header{
                             padding: 150px 20px;
