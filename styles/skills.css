@@ -196,6 +196,10 @@
     margin-top: 1rem;
 }
 
+.otherSkills .item > i:hover {
+    color: #bf84ce;
+}
+
 .item3_1 {
     display: none;
 }
@@ -205,6 +209,12 @@
                             grid-template-columns: repeat(3, 33.3%);
                             width: 75%;
                             margin-bottom: 5rem;
+                        }
+                    }
+
+                    @media screen and (max-width: 900px) {
+                        #skills {
+                            background: var(--mainBG);
                         }
                     }
 
