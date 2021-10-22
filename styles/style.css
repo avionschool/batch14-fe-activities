@@ -164,6 +164,21 @@ header ul li a:hover {
     border-radius: 10px;
 }
 
+.lineHR {
+    width: 50%;
+    height: 10px;
+    border: none;
+    color: #000;
+    border-radius: 15px;
+    background: linear-gradient(to right, violet, blue);
+    margin: 0 auto;
+    transition: 2s;
+}
+
+.lineHR:hover {
+    background: linear-gradient(to left, violet, blue);
+}
+
                     @media (max-width: 991px) {
                         #header{
                             padding: 150px 20px;
@@ -216,5 +231,10 @@ header ul li a:hover {
                             cursor: pointer;
                             z-index: 1000;
                             border-radius: 2px;
+                        }
+                    }
+                    @media screen and (max-width: 768px) {
+                        .lineHR {
+                            width: 80%;
                         }
                     }

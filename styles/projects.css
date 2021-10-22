@@ -10,9 +10,11 @@ article {
 }
 
 .projects h2 {
-    text-align: center;
+    text-align: left;
+    padding-left: 20rem;
     font-size: 4rem;
     padding-top: 10rem;
+    padding-bottom: 1rem;
 }
 
 .projContents {
@@ -224,6 +226,7 @@ a svg rect:hover {
                     @media screen and (max-width: 768px) {
                         .projects h2 {
                             font-size: 3rem;
+                            margin-left: -17rem;
                         }
                         .projContents .card {
                             width: 420px;
@@ -239,10 +242,11 @@ a svg rect:hover {
                             font-size: 1.3rem;
                         }
                     }
-                    @media screen and (max-width: 414px) {
+                    @media screen and (max-width: 425px) {
                         .projects h2 {
                             padding-top: 6rem;
                             font-size: 2rem;
+                            margin-left: -19rem;
                         }
                         .projContents .card {
                             width: 300px;
@@ -261,6 +265,7 @@ a svg rect:hover {
                     @media screen and (max-width: 375px) {
                         .projects h2 {
                             font-size: 2rem;
+                            margin-left: -19rem;
                         }
                         .projContents .card {
                             width: 300px;
@@ -277,6 +282,9 @@ a svg rect:hover {
                         }
                     }
                     @media screen and (max-width: 320px) {
+                        .projContents h2 {
+                            text-align: left;
+                        } 
                         .projContents .card {
                             width: 250px;
                             height: 130px;

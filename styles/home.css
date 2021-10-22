@@ -269,7 +269,7 @@
                             margin: 1.4rem 1.4rem;
                         }
                     }
-                    @media screen and (max-width: 414px) {
+                    @media screen and (max-width: 425px) {
                         .contents .left {
                             margin-top: -30px;
                         }
@@ -484,7 +484,7 @@
                             left: 105%;
                         }
                     }
-                    @media screen and (max-width: 414px) {
+                    @media screen and (max-width: 425px) {
                         .contents .right img {
                             top: -160px;
                             width: 120%;

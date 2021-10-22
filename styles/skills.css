@@ -1,5 +1,5 @@
 #skills {
-    padding-top: 10rem;
+    padding-top: 20rem;
     background: url(../images/projBG.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,8 +9,10 @@
 
 #skills .heading {
     align-items: center;
-    text-align: center;
+    text-align: right;
+    padding-right: 20rem;
     font-size: 4rem;
+    padding-bottom: 1rem;
 }
 
 .contSkills {
@@ -186,6 +188,7 @@
     place-items: center;
     width: 50%;
     margin: 0 auto;
+    padding-bottom: 5rem;
 }
 
 .otherSkills .item > .itemH3 {
@@ -222,6 +225,11 @@
                         #skills {
                             background: var(--mainBG);
                         }
+                        #skills .heading {
+                            margin-top: -10rem;
+                            font-size: 3rem;
+                            padding-right: 4rem;
+                        }
                         .otherSkills {
                             margin-bottom: 5rem;
                         }
@@ -240,6 +248,7 @@
                         }
                         #skills .heading {
                             font-size: 2rem;
+                            padding-right: 1rem;
                         }
                         .contSkills {
                             flex-direction: column;
