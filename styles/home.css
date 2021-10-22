@@ -536,4 +536,9 @@
                             font-size: 1rem;
                             padding: 10px 20px;
                         }
+                        .contents .right img {
+                            margin-top: 3rem;
+                            width: 70%;
+                            height: 100%;
+                        }
                     }
