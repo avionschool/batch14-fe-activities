@@ -1,0 +1,119 @@
+body {
+	background-image: url('./assets/bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Courier New', monospace;
+	color: #eeeee4;
+}
+
+/* * {
+	box-sizing: border-box;
+} */
+#main {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0 10rem 0 10rem;
+
+	flex-wrap: wrap;
+}
+
+#title {
+	padding-bottom: 1.5rem;
+	font-size: 2rem;
+	text-align: center;
+}
+
+#title span {
+	font-size: 1.5rem;
+}
+
+#img-div {
+	display: block;
+	flex: 3;
+}
+
+#tribute-link {
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	color: #eeeee4;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font-size: 24px;
+	overflow: hidden;
+	transition: 0.2;
+}
+
+#tribute-link:hover {
+	color: #0b1014;
+	background: #eeeee4;
+	box-shadow: 0 0 10px #eeeee4, 0 0 40px #eeeee4, 0 0 80px #eeeee4;
+	transition-delay: 0.3s;
+}
+
+#img-caption {
+	margin-top: 1.8rem;
+	text-align: center;
+	font-size: 15px;
+}
+#image {
+	display: block;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.article {
+	/* display: flex;
+    flex-direction: column; */
+	flex: 2;
+	color: #eeeee4;
+	animation: fadein 5s;
+	-moz-animation: fadein 5s;
+	-webkit-animation: fadein 5s;
+	-o-animation: fadein 5s;
+}
+
+#gif {
+	display: flex;
+	padding: 2rem 0 2rem 0;
+	justify-content: center;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-moz-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-o-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
