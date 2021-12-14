@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPC Survey Form [Avion]</title>
+    <link rel="icon" href="rpc.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="index.css" type="text/css" />
+</head>
+<body>
+
+<!-- Form Section -->
+    <section>
+        <div class="container">
+            <div class="user sIbx">
+                <div class="image"><img src="sin.png" alt="sign In Image" ></div>
+                <div class="formBox">
+                    <form action="" id="survey-form">
+                        <h1 id="title">Sign In</h1>
+                        <label id="name-label">Username:</label>
+                        <input type="text" name="" id="name" placeholder="Type your Username" required>
+                        <label id="pword-label">Password:</label>
+                        <input type="password" name="" placeholder="Type your Password" required>
+
+                        <label id="using">Device/s:</label>
+                        <input type="checkbox" name="pc" id="pcCk">
+                        <label for="pc" id="pc">Desktop PC</label>
+                        <input type="checkbox" name="lpt" id="lptCk">
+                        <label for="lpt" id="lp">Laptop</label> <br/>
+
+                        <label for="comments" id="comments">Comments: </label><br/>
+                        <textarea name="" id="comTxt" cols="40" rows="5"></textarea>
+
+                        <input type="submit" name="" id="submit" value="Login">
+                        <p class="signUp" id="description">Don't have an account? <a href="#" onclick="toggleForm();">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user sUbx">
+                <div class="formBox">
+                    <form action="" id="survey-form">
+                        <h1 id="title">Inquire Now</h1>
+
+                        <label id="name-label">Username:</label>
+                        <input type="text" name="" id="name" placeholder="Create Username" required>
+                        <label id="email-label">Email Address:</label>
+                        <input type="email" name="" id="email" placeholder="Input Email Address" required>
+                        <label id="number-label">Age:</label>
+                        <input type="number" name="" id="number" placeholder="Input Age" min="0" max="100" required>
+                        
+                        <label id="gender">Gender:</label>
+                        <input type="radio" name="gender" id="ma">
+                        <label for="male" id="male">Male</label>
+                        <input type="radio" name="gender" id="fem">
+                        <label for="female" id="female">Female</label>
+                        
+                        <input type="password" name="" id="pSu" placeholder="Create Password" required>
+                        
+                        <label for="Country" id="count">Country:</label>
+                            <select id="dropdown" name="countries">
+                                <option value="ph">Philippines</option>
+                                <option value="jp">Japan</option>
+                            </select>
+
+                        <input type="submit" name="" id="submitU" value="Sign Up">
+                        <p class="signUp" id="description">Already have an account? <a href="#" onclick="toggleForm();">Sign In</a></p>
+                    </form>
+                </div>
+                <div class="image"><img src="sup.jpg" alt="sign Up Image" ></div>
+            </div>
+        </div>
+    </section>
+
+<!-- JavaScript -->
+    <script type="text/javascript"> 
+        function toggleForm() {
+            var container = document.querySelector('.container');
+            container.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
