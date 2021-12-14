@@ -1,0 +1,11 @@
+.header {
+    color: #fff;
+    position: fixed;
+}
+
+.header h1 {
+    padding-top: 5rem;
+    left: 50%;
+    transform: translate(50%, 0%);
+    font-size: 2.5rem;
+}

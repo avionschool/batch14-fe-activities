@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+/* --Header-- */
+
+.header {
+    height: 100vh;
+    width: 100%;
+    padding: 0 8%;
+    /* background: #080008; */
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+    margin-top: 15px;
+}
+
+.nav-links {
+    padding: 28px 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative;
+    transition: 0.5s;
+}
+
+.nav-links li a::after {
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.nav-links li a:hover {
+    background: #615f5f;
+    border-radius: 3px;
+    padding: 10px 12px;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+
+.btn {
+    cursor: pointer;
+    background: #86443098;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 30px;
+
+}
+
+.btn:hover {
+    background: #bd705998;
+}
+                    @media (max-width: 1024px) {
+                        .logo {
+                            width: 100px;
+                        }
+                        .nav-links li {
+                            font-size: 1.7rem;
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        .nav-links li {
+                            font-size: 1.3rem;
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        .logo {
+                            width: 75px;
+                        }
+                        .nav-links li {
+                            font-size: 1.1rem;
+                        }
+                    }
+                    @media (max-width: 599px) {
+                        .logo {
+                            width: 75px;
+                        }
+                        .nav-links li {
+                            font-size: 0.9rem;
+                        }
+                    }
+                    @media (max-width: 548px) {
+                        .logo {
+                            width: 75px;
+                        }
+                        nav {
+                            display: block;
+                        }
+                        .nav-links {
+                            margin-left: 20%;
+                        }
+                        .nav-links li {
+                            font-size: 1.2rem;
+                        }
+                        .nav-links li a:hover {
+                            background: #615f5f;
+                            border-radius: 3px;
+                            padding: 5px 5px;
+                        }
+                        .btn {
+                            position: relative;
+                            top: 25px;
+                            left: 17%;
+                        }
+                    }
+                    @media (max-width: 460px) {
+                        nav {
+                            display: block;
+                        }
+                        .nav-links {
+                            margin-left: 14%;
+                        }
+                        .nav-links li {
+                            font-size: 1.2rem;
+                        }
+                        .nav-links li a:hover {
+                            background: #615f5f;
+                            border-radius: 3px;
+                            padding: 5px 5px;
+                        }
+                        .btn {
+                            position: relative;
+                            top: 25px;
+                            left: 18%;
+                        }
+                    }
+                    @media (max-width: 414px) {
+                        .logo {
+                            width: 75px;
+                        }
+                        nav {
+                            display: block;
+                        }
+                        .nav-links {
+                            margin-left: 8%;
+                        }
+                        .nav-links li a:hover {
+                            background: #615f5f;
+                            border-radius: 3px;
+                            padding: 5px 5px;
+                        }
+                        .btn {
+                            position: relative;
+                            top: 25px;
+                            left: 20%;
+                        }
+                    }
+                    @media (max-width: 375px) {
+                        nav {
+                            display: block;
+                        }
+                        .nav-links {
+                            margin-left: 5%;
+                        }
+                        .nav-links li {
+                            font-size: 1.2rem;
+                        }
+                        .nav-links li a:hover {
+                            background: #615f5f;
+                            border-radius: 3px;
+                            padding: 5px 2px;
+                        }
+                        .btn {
+                            position: relative;
+                            top: 25px;
+                            left: 20%;
+                        }
+                        .btn:hover {
+                            background: #bd705998;
+                        }
+                    }
+                    @media (max-width: 360px) {
+                        .nav-links {
+                            margin-left: 5%;
+                        }
+                        .nav-links li {
+                            font-size: 1.2rem;
+                        }
+                        .nav-links li a:hover {
+                            background: #615f5f;
+                            border-radius: 3px;
+                            padding: 5px 2px;
+                        }
+                        .btn {
+                            position: relative;
+                            top: 25px;
+                            left: 15.5%;
+                        }
+                    }
+                    @media (max-width: 345px) {
+                        nav {
+                            display: block;
+                        }
+                        .nav-links {
+                            margin-left: 10%;
+                        }
+                        .nav-links li {
+                            font-size: 0.9rem;
+                        }
+                        .nav-links li a:hover {
+                            background: #615f5f;
+                            border-radius: 3px;
+                            padding: 5px 5px;
+                        }
+                        .btn {
+                            position: relative;
+                            top: 25px;
+                            left: 18%;
+                        }
+                    }
+                    @media (max-width: 320px) {
+                        nav {
+                            display: block;
+                        }
+                        .nav-links {
+                            margin-left: 7%;
+                        }
+                        .nav-links li {
+                            font-size: 0.9rem;
+                        }
+                        .nav-links li a:hover {
+                            background: #615f5f;
+                            border-radius: 3px;
+                            padding: 5px 2px;
+                        }
+                        .btn {
+                            position: relative;
+                            top: 25px;
+                            left: 19.5%;
+                        }
+                    }
+
+/* --Contents / Body-- */
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    max-width: 900px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.content h6 {
+    font-size: 60px;
+}
+
+.sclMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.sMedia {
+    width: 80px;
+    height: 80px;
+    background: rgba(255,61,0,0.15);
+    border-radius: 15px;
+    margin: 0 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sMedia a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sMedia i{
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.sMedia.yt i:hover {
+    color: red;
+}
+
+.sMedia.tw i:hover {
+    color: lightskyblue;
+}
+
+.sMedia.sp i:hover {
+    color: green;
+}
+
+.vidBack {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+                    @media (min-aspect-ratio:16/9) {
+                        .vidBack {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    @media (max-aspect-ratio:16/9) {
+                        .vidBack {
+                            width: auto;
+                            height: 100%;
+                        }
+                    }
+                    @media (max-width: 1024px) {
+                        .sMedia {
+                            width: 150px;
+                            height: 115px;
+                            margin: 0 15px;
+                            font-size: 20px;
+                        }
+                        .sMedia i{
+                            font-size: 3rem;
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        .content h1 {
+                            font-size: 65px;
+                        }
+                        .sMedia {
+                            width: 95px;
+                            height: 95px;
+                            margin: 0 15px;
+                        }
+                    }
+                    @media (max-width: 680px) {
+                        .content h1 {
+                            font-size: 55px;
+                        }
+                        .sMedia {
+                            width: 65px;
+                            height: 65px;
+                            margin: 0 15px;
+                            font-size: 12px;
+                        }
+                        .sMedia i{
+                            font-size: 1.4rem;
+                        }
+                    }
+                    @media (max-width: 414px) {
+                        .content h1 {
+                            font-size: 40px;
+                        }
+                        .sMedia {
+                            width: 55px;
+                            height: 55px;
+                            margin: 0 15px;
+                            font-size: 10px;
+                        }
+                        .sMedia i{
+                            font-size: 1.5rem;
+                        }
+                    }
+                    @media (max-width: 375px) {
+                        .content {
+                            top: 55%;
+                        }
+                        .content h1 {
+                            font-size: 30px;
+                        }
+                        .content h6 {
+                            font-size: 40px;
+                        }
+                    }
+                    @media (max-width: 360px) {
+                        .content {
+                            top: 55%;
+                        }
+                        .content h1 {
+                            font-size: 35px;
+                        }
+                        .content h6 {
+                            font-size: 50px;
+                        }
+                    }
+                    @media (max-width: 345px) {
+                        .content {
+                            top: 50%;
+                        }
+                    }
+                    @media (max-width: 320px) {
+                        .content {
+                            top: 60%;
+                        }
+                        .content h1 {
+                            font-size: 30px;
+                        }
+                        .content h6 {
+                            font-size: 40px;
+                        }
+                    }
+                
