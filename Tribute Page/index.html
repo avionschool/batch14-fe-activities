@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JYP Tribute Page [Avion]</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="jypLogo.svg" type="image/svg" sizes="16x16"/>
+</head>
+<body>
+
+<!-- Header -->
+    <div class="header">
+
+        <!-- Video Background -->
+        <video autoplay loop class="vidBack" muted plays-inline>
+            <source src="jypVid.mp4" type="video/mp4">
+        </video>
+
+        <nav>
+            <div class="img-div">
+                <img id="image" class="logo" src="jypLogo.svg" alt="">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#main">Home</a></li>
+                <li><a href="#curArtists">Artists</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li id="title" class="btn" onclick="location.href='https://jyp.jype.com/';">Source</li>
+            </ul>
+        </nav>
+
+<!-- Contents / Body -->
+        <div id="main" class="content">
+            <h1 id="img-caption">JYP Entertainment Introducing <br/> <h6>J.Y.Park</h6></h1>
+            <div id="tribute-info" class="sclMedia">
+                <div class="sMedia yt">
+                    <a href="https://www.youtube.com/c/JYPark" id="tribute-link">
+                        <i class="fab fa-youtube"></i>
+                        <p>Youtube</p>
+                    </a>
+                </div>
+                <div class="sMedia tw">
+                    <a href="https://twitter.com/jypnation" id="tribute-link">
+                        <i class="fab fa-twitter"></i>
+                        <p>Twitter</p>
+                    </a>
+                </div>
+                <div class="sMedia sp">
+                    <a href="https://open.spotify.com/artist/1TTx0YcbKUtJIZY1HEnh9B?si=Up3kkVKqSDWuGG9eM8amLg&dl_branch=1" id="tribute-link">
+                        <i class="fab fa-spotify"></i>
+                        <p>Spotify</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
