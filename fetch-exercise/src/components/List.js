@@ -4,7 +4,7 @@ import { StatusContext } from './context/StatusContextProvider';
 
 function List({ filter }) {
 	const [filteredNames, setFilteredNames] = useState([]);
-	const { state } = useContext(PeopleContext);
+	const { state, dispatch: peopleDispatch } = useContext(PeopleContext);
 	const { dispatch } = useContext(StatusContext);
 	useEffect(() => {
 		if (filter === '') {
@@ -17,10 +17,10 @@ function List({ filter }) {
 			);
 		}
 	}, [state.people, filter]);
-	// const handleDelete = (e, name) => {
-	// 	e.preventDefault();
-	// 	setPeople(people.filter((person) => person.name !== name));
-	// };
+	const handleDelete = (e, name) => {
+		e.preventDefault();
+		peopleDispatch({ type: 'DELETE_PERSON', name: name });
+	};
 	const onSelect = (e, name) => {
 		e.preventDefault();
 		dispatch({ type: 'EDIT', payload: name });
@@ -44,7 +44,7 @@ function List({ filter }) {
 								<button
 									className='px-4 py-2 bg-red-500 text-white rounded-xl'
 									onClick={(e) => {
-										// handleDelete(e, person.name);
+										handleDelete(e, person.name);
 									}}
 								>
 									Delete

@@ -38,7 +38,13 @@ const reducer = (state, action) => {
 						: user;
 				}),
 			};
-
+		case 'DELETE_PERSON':
+			return {
+				...state,
+				people: state.people.filter(
+					(person) => person.name !== action.name
+				),
+			};
 		case 'INCREMENT_COUNT':
 			return {
 				...state,
