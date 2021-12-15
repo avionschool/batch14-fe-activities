@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background-image: linear-gradient(to right, #000428, #004e92);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: grid;
+	place-items: center;
+	height: calc(100vh - 50px);
+	padding: 40px;
+	font-family: 'Poppins';
+}
+
+h1,
+span,
+p,
+h2 {
+	color: #ebebeb;
+}
+
+.container {
+	width: min(100%, 1000px);
+	padding: 0 50px;
+}
+
+.hero-wrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.hero-title-container {
+	width: 60%;
+}
+
+.hero-title {
+	font-size: 2rem;
+}
+
+.hero-image {
+	width: 40%;
+	color: #323232;
+}
+
+.hero-image img {
+	width: 100%;
+}
+
+.portfolio-title {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+.grid-container {
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	grid-column-gap: 4rem;
+	grid-auto-rows: 500px;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.image {
+	position: relative;
+	width: 100%;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
+}
+
+.image-overlay {
+	display: block;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.btn-link {
+	text-decoration: none;
+	cursor: pointer;
+	color: #829cd0;
+	font-size: large;
+}
+
+.image-caption {
+	text-align: center;
+	font-weight: bold;
+	font-size: larger;
+}
+
+.image img {
+	width: 100%;
+	height: auto;
+}
+
+/* small screens */
+@media (max-width: 769px) {
+	body {
+		display: block;
+		padding: 0;
+	}
+
+	.container {
+		height: auto;
+		width: 100%;
+		padding: 0 20px;
+		grid-template-rows: 1fr 1fr;
+		margin-top: 5rem;
+	}
+
+	.hero-wrapper {
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+
+	.hero-image {
+		width: 100%;
+	}
+
+	.hero-title-container {
+		width: 100%;
+		text-align: center;
+		margin-top: 1.5rem;
+	}
+
+	.hero-title {
+		font-size: 20px;
+	}
+
+	.grid-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.image {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+}

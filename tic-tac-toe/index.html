@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="intro">
+        <div class="title">
+            <h1>Choose your side</h1>
+        </div>
+
+        <div class="image-div">
+            <div class="image">
+                <img src="./xHD.png" alt="">
+                <button class="button" id='x-button'>X</button>
+            </div>
+            <div class="image">
+                <img src="./zeroHD.png" alt="">
+                <button class="button" id='z-button'>Zero</button>
+            </div>
+        </div>
+    </div>
+    <div class="container hide">
+        <div class="title">
+            <h1>Tic Tac Toe</h1>
+            <h2 id='win-label'></h2>
+        </div>
+        <canvas id="canvas"></canvas>
+
+        <div class="buttons">
+            <button id="previous-button">Prev</button>
+            <button id="next-button">Next</button>
+        </div>
+        <div class='reset-div'>
+
+            <button id="reset-button">Reset</button>
+        </div>
+    </div>
+
+
+    <img src="./zero.png" alt="" id="zero" style="display: none">
+    <img src="./x.png" alt="" id="x" style="display: none">
+    <script src="app.js"></script>
+</body>
+
+</html>

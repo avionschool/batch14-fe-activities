@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="contentBox">
+            <div class="formBox">
+
+
+                <h2 id="title">School Transport Survey</h2>
+
+
+                <form action="index.html" method="GET">
+
+                    <div class="input">
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" name="name" class="field" id="name" required placeholder="Name">
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="input">
+                                <label for="email" id="email-label">Email</label>
+                                <input type="email" name="email" class="field" id="email" required placeholder="Email">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 col-xs-12">
+                            <div class="input">
+                                <label for="number" id="number">Age</label>
+                                <input type="number" name="age" class="field" id="number" pattern="\d*" min="18"
+                                    max="90" required>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="input">
+
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="dropdown" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+
+                    </div>
+
+                    <p>Have you ever used any transportation services provided for students?</p>
+                    <div class="radioDiv">
+                        <label for="yes" class="radio">
+                            <input type="radio" name="transpo" id="yes" value="yes" class="radio__input">
+                            <div class="radio__radio"></div>
+                            Yes
+                        </label>
+
+                        <label for="no" class="radio">
+                            <input type="radio" name="transpo" id="no" value="no" class="radio__input">
+                            <div class="radio__radio"></div>
+                            No
+                        </label>
+                    </div>
+
+                    <p>What forms of public transportation do you take?</p>
+                    <div class="check">
+                        <div class="check-item">
+                            <input type="checkbox" name="bus" id="bus" value="Bus">
+                            <label for="bus">Bus</label>
+                        </div>
+
+                        <div class="check-item">
+                            <input type="checkbox" name="jeep" id="jeep" value="Jeep">
+                            <label for="jeep">Jeep</label>
+
+                        </div>
+                        <div class="check-item">
+                            <input type="checkbox" name="tricycle" id="tricycle" value="Tricycle">
+                            <label for="tricycle">Tricycle</label>
+
+                        </div>
+                        <div class="check-item">
+                            <input type="checkbox" name="taxi" id="taxi" value="Taxi">
+                            <label for="taxi">Taxi</label>
+                        </div>
+                    </div>
+
+
+                    <div class="input">
+                        <label for="notes" id="notes">Provide a reason why you use this form of transport</label>
+                        <textarea name="notes" id="" width="100%" required></textarea>
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit" class="button">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

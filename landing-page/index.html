@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fender</title>
+
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="./sass/customs.css">
+</head>
+
+<body>
+    <!-- User Story #1: As a user, I want my product landing page to have a header element with a corresponding
+    id="header".
+    User Story #2: As a user, I want to see an image within the header element with a corresponding
+    id="header-img". A company logo would make a good image here.
+    User Story #3: Within the #header element I want to see a nav element with a corresponding id="nav-bar".
+    User Story #4: I want to see at least three clickable elements inside the nav element, each with the class nav-link.
+    User Story #5: As a user, when I click a .nav-link button in the nav element, I am taken to the corresponding
+    section of the landing page.
+    User Story #6: As a user, I can watch an embedded product video with id="video".
+    User Story #7: As a user, my landing page should have a form element with a corresponding id="form".
+    User Story #8: Within the form, I want to see an input field with id="email" where I can enter an email address.
+    User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
+    User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+    User Story #11: Within the form, I want to see a submit input with a corresponding id="submit".
+    User Story #12: When I click the #submit element, the email is submitted to a static page.
+    User Story #13: The navbar should always be at the top of the viewport.
+    User Story #14: My product landing page should have at least one media query.User Story #15: My product landing page
+    should utilize CSS flexbox at least once. -->
+
+    <header id="header">
+        <nav id='nav-bar'>
+            <input type="checkbox" id="nav-toggle">
+            <div id="header-img">
+                <img src="./assets/logo.png" alt="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+            <label for='nav-toggle' class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="hero-section" id="home">
+                <div class="hero-title">
+                    <h1>Fender Stevie Ray Vaughan Signature Stratocaster</h1>
+                    <span>Price: $10000</span>
+                    <button class="button">Buy now</button>
+                </div>
+
+                <div class="hero-img">
+                    <img src="./assets/srv.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="demo" id="demo">
+                <h1>Demo</h1>
+                <iframe width="50%" height="315" id=video src="https://www.youtube.com/embed/OkqInfKru3M"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+
+            <div class="contact-form" id="contact">
+                <div class="form-container">
+                    <div class="form-title">
+                        <h1>Contact Us</h1>
+                    </div>
+                    <form action="sub.html">
+
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="row column-gap">
+                            <div class="col-md-6 col-xs-12">
+                                <label for="first_name">First Name</label>
+                                <input type="text" name="first_name" id="" required>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" name="last_name" id="" required>
+                            </div>
+                        </div>
+
+                        <div class="input">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="" cols="30" rows="5" required></textarea>
+                        </div>
+
+                        <div class="submit">
+                            <button class="button" type="submit" id="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

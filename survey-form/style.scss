@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import './sasslib/base/resets';
+@import './variables';
+@import './mixins';
+@import './sasslib/layout/grid';
+@import './sasslib/layout/forms';
+
+body {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(
+			225deg,
+			rgba(102, 205, 170, 0.7),
+			rgba(255, 183, 147, 0.6)
+		),
+		url('./assets/school-bus.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	@include flexCenter();
+}
+
+.wrapper {
+	padding: 40px;
+	background-color: #fff;
+	border-radius: 20px;
+
+	.formBox {
+		width: 100%;
+
+		h2 {
+			color: $primaryColor;
+			font-weight: 600;
+			font-size: 1.5em;
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+			border-bottom: 2px solid $secondaryColor;
+		}
+
+		p {
+			font-size: 15px;
+			margin-bottom: 5px;
+			display: block;
+			color: $labelColor;
+			font-weight: 300;
+		}
+
+		.input {
+			margin-bottom: 5px;
+			label {
+				font-size: 15px;
+				margin-bottom: 5px;
+				display: inline-block;
+				color: $labelColor;
+				font-weight: 300;
+			}
+
+			input {
+				width: 100%;
+				padding: 5px 15px;
+				outline: none;
+				font-weight: 400;
+				border: 1px solid $labelColor;
+				letter-spacing: 1px;
+				color: $labelColor;
+			}
+
+			select {
+				padding: 8px 12px;
+				color: $labelColor;
+				background-color: #fff;
+				border: 1px solid $labelColor;
+				border-radius: 5px;
+			}
+
+			textarea {
+				display: block;
+				width: 100%;
+				color: $labelColor;
+				border: 2px solid $labelColor;
+				padding: 1em;
+				outline: none;
+				resize: vertical;
+				border-radius: 10px;
+			}
+		}
+
+		.radioDiv {
+			.radio {
+				display: inline-flex;
+				align-items: center;
+				cursor: pointer;
+				margin-right: 10px;
+				color: $labelColor;
+
+				&__input {
+					// display: none;
+					margin-right: 10px;
+				}
+				// NOT WORKING SADGE :(
+				// &__radio {
+				// 	width: 1em;
+				// 	height: 1em;
+				// 	border: 2px solid $labelColor;
+				// 	border-radius: 50%;
+				// 	margin-right: 10px;
+				// 	box-sizing: border-box;
+				// 	padding: 2px;
+
+				// 	&::after {
+				// 		content: '';
+				// 		width: 100%;
+				// 		height: 100%;
+				// 		display: block;
+				// 		background: $primaryColor;
+
+				// 		border-radius: 50%;
+				// 		transform: scale(0);
+				// 	}
+				// }
+
+				// &__input:checked + &__radio::after {
+				// 	transform: scale(1);
+				// }
+			}
+		}
+		.check {
+			display: flex;
+			flex-direction: column;
+			.check-item {
+				label {
+					font-size: 15px;
+					margin-bottom: 5px;
+					color: $labelColor;
+					font-weight: 300;
+				}
+
+				input {
+					margin-right: 5px;
+				}
+			}
+		}
+
+		.btn-container {
+			@include flexCenter();
+
+			.button {
+				background-color: white;
+				color: $submitColor;
+				padding: 10px 20px;
+				border: 2px solid $submitColor;
+				border-radius: 20px;
+				cursor: pointer;
+				transition-duration: 0.4s;
+
+				&:hover {
+					color: #fff;
+					background-color: $submitColor;
+				}
+			}
+		}
+	}
+
+	.contentBox {
+		@include flexCenter();
+		// width: 100%;
+		// height: 100%;
+	}
+}
