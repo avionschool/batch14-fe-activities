@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: #222;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    justify-content: center;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+
+header h2 {
+    color: #fff;
+    font-size: 2vw;
+}
+
+.chess {
+    margin-top: 3%;
+}
+
+.board {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.white {
+    background: url(white.jpg);
+    background-position: center;
+    border: black 1px solid;
+    color: #000;
+    font-weight: 500;
+    width: 5vw;
+    height: 5vw;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.black {
+    background: url(black.jpg);
+    background-position: center;
+    border: black 1px solid;
+    color: #fff;
+    font-weight: 500;
+    width: 5vw;
+    height: 5vw;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.board .black #move {
+    animation: animate 2s linear forwards;
+}
+
+    @keyframes animate {
+        0% {
+            z-index: 1;
+            position: absolute;
+        }
+
+        100% {
+            color: #000;
+            position: absolute;
+            z-index: 1;
+            transform: translateY(100%);
+        }
+    }
+
+.board .white #move2 {
+    animation: animateWhite 2s linear forwards;
+    animation-delay: 3s;
+}
+
+    @keyframes animateWhite {
+        0% {
+            position: absolute;
+            z-index: 1;
+        }
+
+        100% {
+            color: #fff;
+            position: absolute;
+            z-index: 1;
+            transform: translateY(-100%);
+        }
+    }
+
+.board .black #move3 {
+    animation: animateHorse 2s linear forwards;
+    animation-delay: 6s;
+}
+
+    @keyframes animateHorse {
+        0% {
+            z-index: 1;
+        }
+
+        100% {
+            color: #000;
+            z-index: 1;
+            position: absolute;
+            transform: translateX(130%) translateY(200%);
+        }
+    }
+
+.board .black #move4 {
+    animation: animatePawn 2s linear forwards;
+    animation-delay: 9s;
+}
+
+    @keyframes animatePawn {
+        0% {
+            z-index: 1;
+            position: absolute;
+        }
+
+        100% {
+            color: #fff;
+            position: absolute;
+            z-index: 1;
+            transform: translateY(-200%);
+        }
+    }
+
+.board .white #movelast {
+    animation: animateLast 2s linear forwards;
+    animation-delay: 12s;
+}
+
+    @keyframes animateLast {
+        0% {
+            z-index: 1;
+            position: absolute;
+        }
+
+        100% {
+            color: #fff;
+            position: absolute;
+            z-index: 1;
+            transform: translateX(115%);
+        }
+    }
