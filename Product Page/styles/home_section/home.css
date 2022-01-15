@@ -1,0 +1,304 @@
+.home {
+  min-height: var(--mHeight);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider {
+  width: 1300px;
+  height: 750px;
+  overflow: hidden;
+  margin-top: -10rem;
+}
+
+.slides {
+  width: 500%;
+  height: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.slide img {
+  width: 1300px;
+  height: 750px;
+}
+
+/* Manual Navigation */
+
+.nav-manual {
+  position: absolute;
+  width: 1300px;
+  margin-top: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.man-btn {
+  border: 2px solid var(--black);
+  padding: 3px;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.man-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.man-btn:hover {
+  background: var(--black);
+}
+
+    #radio1:checked ~ .first {
+    margin-left: 0;
+    }
+
+    #radio2:checked ~ .first {
+    margin-left: -20%;
+    }
+
+    #radio3:checked ~ .first {
+    margin-left: -40%;
+    }
+
+/* Auto Navigation */
+
+.nav-auto {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 710px;
+}
+
+.nav-auto div {
+  border: 2px solid var(--black);
+  padding: 3px;
+  width: 100px;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+    #radio1:checked ~ .nav-auto .auto-btn1 {
+        background: var(--black);
+    }
+    #radio2:checked ~ .nav-auto .auto-btn2 {
+        background: var(--black);
+    }
+    #radio3:checked ~ .nav-auto .auto-btn3 {
+        background: var(--black);
+    }
+
+    .homeButton {
+        display: grid;
+        place-content: center;
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+    
+    .homeButton #homeBtn {
+        cursor: pointer;
+        padding: 2rem 3rem;
+        outline: auto;
+        outline-style: round;
+        border-radius: 25px;
+        background: var(--black);
+        color: var(--white);
+        font-size: 2rem;
+        font-weight: var(--weight - 100);
+        animation: fade_in 1.5s;
+    }
+    
+        @keyframes fade_in {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    
+    .homeButton #homeBtn:hover,
+    .container .item button:hover {
+        background: var(--gray);
+    }
+    
+                        @media screen and (max-width: 1470px) {
+                            .slider {
+                                width: 1000px;
+                                height: 750px;
+                            }
+                            .man-btn,
+                            .nav-auto div {
+                                margin-right: 300px;
+                            }
+                        }
+                        @media screen and (max-width: 1400px) {
+                            .man-btn,
+                            .nav-auto div {
+                                margin-right: 300px;
+                            }
+                        }
+                        @media screen and (max-width: 1024px) {
+                            .slider {
+                                margin-top: -60rem;
+                                transform: translateX(0);
+                            }
+                            .slider,
+                            .slide img {
+                                width: 900px;
+                                height: 550px;
+                            }
+                            .man-btn {
+                                transform: translateY(-200px);
+                            }
+                            .nav-auto  {
+                                margin-top: 510px;
+                            }
+                            .man-btn,
+                            .nav-auto div {
+                                margin-right: 425px;
+                            }
+                            .homeButton {
+                                margin-top: -40%;
+                                margin-bottom: 40%;
+                            }
+                            .homeButton #homeBtn {
+                                font-size: 3.5rem;
+                                padding: 3rem 4rem;
+                            }
+                        }
+                        @media screen and (max-width: 1000px) {
+                            .slider {
+                                margin-top: -35%;
+                            }
+                            .man-btn,
+                            .nav-auto div {
+                                margin-right: 490px;
+                            }
+                            .homeButton {
+                                margin-top: -25%;
+                                margin-bottom: 15%;
+                            }
+                        }
+                        @media screen and (max-width: 768px) {
+                            .slider {
+                                margin-top: -35%;
+                            }
+                            .homeButton {
+                                margin-top: -30%;
+                                margin-bottom: 20%;
+                            }
+                            .man-btn,
+                            .nav-auto div {
+                                margin-right: 650px;
+                            }
+                        }
+                        @media screen and (max-width: 700px) {
+                            .man-btn,
+                            .nav-auto div {
+                                display: none;
+                            }
+                        }
+                        @media screen and (max-width: 414px) {
+                            .slider {
+                                transform: translateX(0);
+                            }
+                            .slider,
+                            .slide img {
+                                width: 414px;
+                                height: 250px;
+                            }
+                            .homeButton #homeBtn {
+                                padding: 2rem 3rem;
+                                font-size: 2rem;
+                            }
+                        }
+                        @media screen and (max-width: 411px) {
+                            .slider {
+                                margin-top: -40rem;
+                                transform: translateX(0);
+                            }
+                            .homeButton {
+                                margin-top: -70%;
+                                margin-bottom: 70%;
+                            }
+                        }
+                        @media screen and (max-width: 375px) {
+                            .slider {
+                                margin-top: -40rem;
+                                transform: translateX(0px);
+                            }
+                            .slides {
+                                width: 500%;
+                            }
+                            .slider,
+                            .slide img {
+                                width: 375px;
+                                height: 250px;
+                            }
+                            .homeButton {
+                                margin-top: -80%;
+                                margin-bottom: 80%;
+                            }
+                        }
+                        @media screen and (max-width: 360px) {
+                            .slider {
+                                margin-top: -20rem;
+                                transform: translateX(0px);
+                            }
+                            .slides {
+                                width: 500%;
+                            }
+                            .slider,
+                            .slide img {
+                                width: 375px;
+                                height: 250px;
+                            }
+                            .homeButton {
+                                margin-top: -50%;
+                                margin-bottom: 50%;
+                            }
+                        }
+                        @media screen and (max-width: 320px) {
+                            .homeButton #homeBtn {
+                                padding: 1.5rem 2.5rem;
+                                font-size: 1.5rem;
+                            }
+                        }
+/*# sourceMappingURL=home.css.map */

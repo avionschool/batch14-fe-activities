@@ -1,0 +1,165 @@
+/* ---Appliances Section--- */
+
+.appliances {
+    min-height: 100vh;
+    background: var(--white_sec);
+}
+
+.appliances .white_Sec {
+    background: var(--white_sec);
+    min-height: 10rem;
+}
+
+.appliances .refImg {
+    padding-top: 80rem;
+    background-image: url('https://images.samsung.com/is/image/samsung/assets/ph/p6_gro1/p6_initial_pcd/p6_initial_refrigerators/pfs-hero-ref-1440x640.png?imwidth=1366');
+    background-repeat: no-repeat;
+    background-size: calc(100%);
+    position: relative;
+}
+
+.refImg .contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: -60rem;
+}
+
+.contents .heading {
+    text-align: left;
+    color: var(--black);
+    transform: translateX(30%);
+    font-size: 5rem;
+    font-weight: var(--weight + 100);
+}
+
+.contents #aBtn {
+    background: var(--black);
+    color: var(--white);
+    outline: auto;
+    outline-style: round;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    width: 30%;
+    height: 55px;
+    font-size: 1.75rem;
+    font-weight: var(--weight);
+    animation: fade_in 1.5s;
+    transform: translateX(100%);
+    margin-top: 3rem;
+}
+
+.contents #aBtn:hover {
+    background: var(--gray);
+}
+
+.appliances .container {
+    display: grid;
+    grid-template-columns: repeat(4, 10%);
+    grid-template-rows: 250px;
+    grid-column-gap: 20px;
+    flex-wrap: wrap;
+    margin-top: -10rem;
+    place-content: center;
+    text-align: center;
+    padding-bottom: 10rem;
+    overflow: hidden;
+}
+
+.appliances .container .item {
+    border-radius: 0px;
+    text-align: right;
+    display: grid;
+    background: var(--white_sec);
+}
+
+.appliances .container .item h1 {
+    color: var(--gray);
+    text-align: center;
+    font-size: 2rem;
+    z-index: 1;
+    margin-top: 0rem;
+}
+
+.appliances .container .item img {
+    max-width: 50%;
+    height: 150px;
+    border-radius: 0px;
+    margin-top: 1rem;
+}
+
+.appliances .container .item img:hover {
+    transform: translateY(-10px);
+}
+
+                    @media screen and (min-width: 769px) and (max-width: 1024px){
+                        .contents .heading {
+                            transform: translateY(-100%);
+                            margin-left: 5%;
+                        }
+                        .contents #aBtn {
+                            cursor: pointer;
+                            padding: 0rem 1rem;
+                            width: 30%;
+                            margin-left: 5%;
+                            transform: translateY(-350%);
+                        }
+                        .appliances .container {
+                            grid-template-columns: repeat(4, 20%);
+                            grid-column-gap: 10px;
+                            grid-template-rows: 250px;
+                            margin-top: -40rem;
+                        }
+                    }
+                    @media screen and (min-width: 415px) and (max-width: 768px) {
+                        .contents .heading {
+                            transform: translateY(-130%);
+                            margin-left: 5%;
+                            font-size: 2.5rem;
+                        }
+                        .contents #aBtn {
+                            cursor: pointer;
+                            padding: 0rem 1rem;
+                            width: 30%;
+                            height: 20px;
+                            font-size: 1.5rem;
+                            margin-left: 5%;
+                            transform: translateY(-1000%);
+                        }
+                        .appliances .container {
+                            grid-template-columns: repeat(4, 20%);
+                            grid-column-gap: 10px;
+                            grid-template-rows: 250px;
+                            margin-top: -50rem;
+                        }
+                    }
+                    @media screen and (min-width: 320px) and (max-width: 414px) {
+                        .contents .heading {
+                            transform: translateY(-170%);
+                            font-size: 2rem;
+                        }
+                        .contents #aBtn {
+                            cursor: pointer;
+                            padding: 0rem 1rem;
+                            width: 50%;
+                            height: 20px;
+                            font-size: 1.2rem;
+                            margin-left: 5%;
+                            transform: translateY(-1100%);
+                        }
+                        .appliances .container {
+                            margin-top: -70rem;
+                            grid-template-columns: repeat(2, 40%);
+                            grid-template-rows: 200px;
+                            grid-auto-rows: 200px;
+                            justify-content: center;
+                        }
+                        .appliances .container .item h1 {
+                            font-size: 1.75rem;
+                            margin-top: -0.5rem;
+                        }
+                        .appliances .container .item img {
+                            height: 100px;
+                        }
+                    }

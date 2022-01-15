@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Samsung - Landing Page [Avion]</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" sizes="16x16" />
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/home_section/home.css" />
+    <link rel="stylesheet" href="styles/mobile_section/mobile.css" />
+    <link rel="stylesheet" href="styles/tv_section/tv.css" />
+    <link rel="stylesheet" href="styles/appliances_section/appliances.css" />
+    <link rel="stylesheet" href="styles/explore_section/explore.css" />
+    <link rel="stylesheet" href="styles/support_section/support.css">
+
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!-- image carousel link -->
+    <link rel="stylesheet" href="styles/jquery.flipster.min.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+    <header id="header">
+
+        <a href="" class="logo" id="header-img">
+            <img class="imgLogo" src="images/samsungLogo.png" alt="" />
+        </a>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <nav class="navbar" id="nav-bar">
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="#mobile">mobile</a></li>
+                <li><a href="#tv">tV</a></li>
+                <li><a href="#appliances">appliances</a></li>
+                <li><a href="#explore">explore</a></li>
+                <li><a href="#support">support</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+    <section class="home" id="home">
+        <!-- image slider -->
+        <div class="slider">
+            <div class="slides">
+                <!-- buttons -->
+                <input type="radio" name="rBtn" id="radio1">
+                <input type="radio" name="rBtn" id="radio2">
+                <input type="radio" name="rBtn" id="radio3">
+                <!-- images -->
+                <div class="slide first">
+                    <img src="images/h1.jpg" alt=""/>
+                </div>
+                <div class="slide">
+                    <img src="images/h2.jpg" alt=""/>
+                </div>
+                <div class="slide">
+                    <img src="images/h3.jpg" alt=""/>
+                </div>
+                <!-- auto nav -->
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+            <!-- manual nav -->
+            <div class="nav-manual">
+                <label for="radio1" class="man-btn"></label>
+                <label for="radio2" class="man-btn"></label>
+                <label for="radio3" class="man-btn"></label>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- source button -->
+        <div class="homeButton">
+            <button id="homeBtn" onclick="location.href='https://www.samsung.com/ph/';">Click to Learn More</button>
+        </div>
+
+<!-- home section ends -->
+
+<!-- mobile section starts  -->
+
+    <section class="mobile" id="mobile">
+
+        <!-- video mobile -->
+        <div class="vidMob" id="video">
+            <video controls>
+                <source src="images/mobVid.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- see phone model button -->
+        <div class="seeBtn">
+            <button id="mBtn" onclick="location.href='https://www.samsung.com/ph/smartphones/galaxy-note/';">
+                See All
+            </button>
+        </div>
+
+        <div class="container">
+            <div class="item item1 fade-in">
+                <i class="far fa-heart"></i>
+                <img src="images/mobile/m1.PNG" alt="">
+                <h1><strong>Galaxy Z Fold3 5G</strong></h1>
+                <button>Learn More</button>
+            </div>
+            <div class="item item2 fade-in">
+                <i class="far fa-heart"></i>
+                <img src="images/mobile/m2.PNG" alt="">
+                <h1><strong>Galaxy Z Flip3 5G</strong></h1>
+                <button>Learn More</button>
+            </div>
+            <div class="item item3 fade-in">
+                <i class="far fa-heart"></i>
+                <img src="images/mobile/m3.PNG" alt="">
+                <h1><strong>Galaxy S21 Ultra 5G</strong></h1>
+                <button>Learn More</button>
+            </div>
+            <div class="item item4 fade-in">
+                <i class="far fa-heart"></i>
+                <img src="images/mobile/m4.PNG" alt="">
+                <h1><strong>Galaxy Note20 Ultra 5G</strong></h1>
+                <button>Learn More</button>
+            </div>
+        </div>
+
+        <!-- see all button -->
+        <div class="seeBtn secBtn">
+            <button id="mBtn" onclick="location.href='https://www.samsung.com/ph/smartphones/?product1=sm-f916bznaxtc&product2=sm-g996bzvgphl&product3=sm-a526bzkhxtc';">
+                See All
+            </button>
+        </div>
+
+    </section>
+
+<!-- mobile section ends -->
+
+<!-- tv section starts  -->
+
+    <section class="tv" id="tv">
+
+        <h1 class="heading">Explore Samsung TVs that meet your needs</h1>
+        <!-- tv options -->
+        <div class="tvOpts">
+            <h1 class="allTV" id="cursorH1" data-filter="all">All</h1>
+            <h1 class="changeTV" id="cursorH1" data-filter=".cat">Category</h1>
+            <h1 class="changeTV" id="cursorH1" data-filter=".size">Size</h1>
+            <h1 class="changeTV" id="cursorH1" data-filter=".res">Resolution</h1>
+        </div>
+
+        <!-- tv image reflections -->
+        <div class="boxTV">
+            <div class="carousel">
+                <ul>
+                    <li><img src="images/tv/r1.jpg" alt=""></li>
+                    <li><img src="images/tv/r2.jpg" alt=""></li>
+                    <li><img src="images/tv/r3.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- tv options contents -->
+        <div class="tvContents">
+            <div class="card cat fade-in">
+                <div class = "imgBx">
+                    <img src = "images/tv/tv1.jpg">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <button id="tBtn" onclick="location.href='https://www.samsung.com/ph/tvs/all-tvs/?neo-qled-8k-tv';">
+                            See All
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card size fade-in">
+                <div class = "imgBx">
+                    <img src = "images/tv/tv3.jpg">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <button id="tBtn" onclick="location.href='https://www.samsung.com/ph/tvs/all-tvs/?75-inches-and-over';">
+                            See All
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card res slide-in fade-in">
+                <div class = "imgBx">
+                    <img src = "images/tv/tv5.jpg">
+                </div>
+                <div class="contentBx">
+                    <div class="content">
+                        <button id="tBtn" onclick="location.href='https://www.samsung.com/ph/tvs/all-tvs/?uhd-8k';">
+                            See All
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+<!-- tv section ends -->
+
+<!-- appliances section starts  -->
+
+    <section class="appliances" id="appliances">
+        <!-- white space -->
+        <div class="white_Sec">
+
+        </div>
+        <!-- ref background -->
+        <div class="refImg">
+            <div class="contents fade-in">
+                <h1 class="heading">Stay Healthy.<br/>Keep Food Fresh.</h1>
+                <button id="aBtn" onclick="location.href='https://www.samsung.com/ph/refrigerators/';">See All</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="item item1">
+                <img src="images/appliances/ref1.jpg" alt="">
+                <h1>French Door</h1>
+            </div>
+            <div class="item item2">
+                <img src="images/appliances/ref2.jpg" alt="">
+                <h1>Side by Side</h1>
+            </div>
+            <div class="item item3">
+                <img src="images/appliances/ref3.jpg" alt="">
+                <h1>Bottom Mount Freezer</h1>
+            </div>
+            <div class="item item4">
+                <img src="images/appliances/ref4.jpg" alt="">
+                <h1>Top Mount Freezer</h1>
+            </div>
+        </div>
+
+    </section>
+
+<!-- appliances section ends -->
+
+<!-- explore section starts  -->
+
+    <section class="explore" id="explore">
+        <h1 class="headingExplore fade-in">Explore</h1>
+        <!-- first set -->
+        <div class="container fade-in">
+            <div class="item item1">
+                <img src="images/explore/e1.jpg" alt="" onclick="location.href='https://www.samsung.com/ph/explore/brand/breaking-boundaries-with-the-latest-in-stylus-pen-technology/';">
+                <h2><strong>
+                    Breaking Boundaries With the<br/>
+                    Latest in Stylus Pen Technology
+                </strong></h2>
+            </div>
+            <div class="item item2">
+                <img src="images/explore/e2.jpg" alt="" onclick="location.href='https://www.samsung.com/ph/explore/brand/fur-the-win/';">
+                <h2><strong>
+                    #FurTheWin
+                </strong></h2>
+            </div>
+            <div class="item item3">
+                <img src="images/explore/e3.jpg" alt="" onclick="location.href='https://www.samsung.com/ph/explore/brand/olympic-games-and-samsung-galaxy/';">
+                <h2><strong>
+                    The world comes together with<br/> 
+                    Samsung Galaxy
+                </strong></h2>
+            </div>
+        </div>
+        <!-- second set -->
+        <div class="container-two slide-in">
+            <div class="item item1">
+                <img src="images/explore/e4.jpg" alt="" onclick="location.href='https://www.samsung.com/ph/explore/brand/the-design-story-of-neo-qled-8k/';">
+                <h2><strong>
+                    The Design Story of Neo QLED 8K
+                </strong></h2>
+            </div>
+            <div class="item item2">
+                <img src="images/explore/e5.jpg" alt="" onclick="location.href='https://www.samsung.com/global/galaxy/galaxy-s20/bts-edition/';">
+                <h2><strong>
+                    Samsung with BTS
+                </strong></h2>
+            </div>
+            <div class="item item3">
+                <img src="images/explore/e6.jpg" alt="" onclick="location.href='https://www.samsung.com/ph/explore/brand/generation17-todays-leaders-for-a-better-tomorrow/';">
+                <h2><strong>
+                    Generation17: Today’s Leaders<br/> for a Better Tomorrow
+                </strong></h2>
+            </div>
+        </div>
+    </section>
+
+<!-- explore section ends -->
+
+<!-- support section starts  -->
+
+    <section class="support" id="support">
+        <!-- form container -->
+        <div class="container min-vh-100">
+            <div class="row justify-content-center">
+                <h1 class="heading">Support Us</h1>
+                <div class="col-md-10" data-aos="flip-down">
+                    <!-- main form -->
+                    <form name="Form" id="form">
+                        <div class="inputBox">
+                            <input type="text" name="nameTxt" id="nameText" placeholder="Full Name" required>
+                            <input type="number" name="numTxt" id="phoneText" placeholder="Phone">
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="emailInput" id="emailText" placeholder="Email" required>
+                            <input type="number" id="ageText" placeholder="Age" min="18">
+                        </div>
+                        <textarea name="txtArea" id="textArea" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <input type="submit" value="Submit" class="button" onclick="submitForm()" id="submit">
+                        <h3 id="h3Text"><strong></strong></h3>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- contact info -->
+        <div class="containerCtc">
+            <div class="item item1 fade-in">
+                <h1>Online</h1>
+                <h2>There are a number of a different ways of</h2>
+                <h2>contacting us via Live Chat, Email and more</h2>
+                <button id="cBtn">View More</button>
+            </div>
+            <div class="item item2 fade-in">
+                <h1>Call</h1>
+                <h2>Product support</h2>
+                <h2>Mobile Devices</h2>
+                <h2>Available 24/7</h2>
+                <br/><br/>
+                <h2>TV, Audio and Digital Appliances</h2>
+                <h2>Mon-Sun | 8 a.m. to 8 p.m.</h2>
+                <button id="cBtn">View More</button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <hr/>
+        <div class="botFooter">
+            <h1 class="heading">SAMSUNG</h1>
+        </div>
+    </footer>
+
+<!-- support section ends -->
+
+<!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- aos js file cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- custom js file link  -->
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/onscroll.js"></script>
+
+<!-- tv image js -->
+    <script src="js/jquery.flipster.min.js"></script>
+
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3,
+        });
+    </script>
+
+<!-- tv options js -->
+    <script src="js/mixitup.min.js"></script>
+
+    <script>
+        const mixer = mixitup('.tvContents', {
+            selectors: {
+                target: '.card'
+            },
+            animation: {
+                duration: 500
+            }
+        });
+    </script>
+
+</body>
+</html>
